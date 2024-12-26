@@ -58,53 +58,58 @@ body{}
     visibility: visible;
     opacity: 1;
 }
-        /* Fullscreen loader styling */
+
+/* Fullscreen loader styling */
 #loading {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #07010e; /* Background color while loading */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 9999; /* Ensure it is above all other content */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #07010e;
+    /* Background color while loading */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    /* Ensure it is above all other content */
 }
 
 /* Spinner animation */
 .spinner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
 .spinner::after {
-  content: "";
-  width: 50px;
-  height: 50px;
-  border: 5px solid #ccc;
-  border-top-color: #007bff; /* Spinner color */
-  border-radius: 50%;
-  animation: spin 1s linear infinite;
+    content: "";
+    width: 50px;
+    height: 50px;
+    border: 5px solid #ccc;
+    border-top-color: #007bff;
+    /* Spinner color */
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
 }
 
 /* Logo styling */
 .logo {
-  position: absolute;
-  width: 500px;
-  height: 500px;
+    position: absolute;
+    width: 500px;
+    height: 500px;
 }
 
 /* Spinner animation keyframes */
 @keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 
@@ -180,7 +185,7 @@ body{}
 }
 
 @media (max-width: 991.98px) {
-    .navbar .navbar-nav .nav-link  {
+    .navbar .navbar-nav .nav-link {
         margin-right: 0;
         padding: 10px 0;
     }
@@ -242,7 +247,7 @@ body{}
         position: relative;
         min-height: 450px;
     }
-    
+
     #header-carousel .carousel-item img {
         position: absolute;
         width: 100%;
