@@ -71,8 +71,8 @@
 
     <!-- Navbar Start -->
    <nav class="navbar navbar-expand-lg bg-dark navbar-light sticky-top p-0">
-        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5 ">
-            <img src="img/logo.svg" alt=""><h4 class="m-0 text-white hide-on-mobile"><span class="text-primary">JP EDUCATION </span>SERVICES</h4>
+         <a href="index.html" class="navbar-brand d-flex align-items-center  px-lg-5 ">
+             <img src="img/logo.svg" alt=""><h4 class="m-0 text-white"><span class="text-primary">JP EDUCATION </span>SERVICES</h4>
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -82,7 +82,7 @@
                 <a href="index.html" class="nav-item nav-link">Home</a>
                 <a href="about.html" class="nav-item nav-link">About</a>
                 <a href="courses.html" class="nav-item nav-link">Courses</a>
-                <a href="team.html" class="nav-item nav-link">Universities</a>
+                 <a href="university.html" class="nav-item nav-link">Universities</a>
                 <a href="contact.html" class="nav-item nav-link">Contact</a>
             </div>
            <a href="form.html" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Get Started<i
@@ -134,6 +134,13 @@
                                     <label for="email">Your Email</label>
                                 </div>
                             </div>
+                            <!-- Phone number -->
+                            <div class="col-sm-6">
+                                <div class="form-floating">
+                                    <input type="number" class="form-control border-0" id="number" placeholder="Your Phone number" required>
+                                    <label for="number">Your Phone number</label>
+                                </div>
+                            </div>
                             <!-- Select University -->
                             <div class="col-sm-6">
                                 <div class="form-floating">
@@ -142,7 +149,7 @@
                                         <option value="University 1">University 1</option>
                                         <option value="University 2">University 2</option>
                                         <option value="University 3">University 3</option>
-                                    </select>>
+                                    </select>
                                 </div>
                             </div>
                             <!-- Select Course -->
@@ -253,25 +260,27 @@
 
     <script>
         function sendToWhatsApp() {
-            // Collect form data
-            const name = document.getElementById("name").value;
-            const email = document.getElementById("email").value;
-            const university = document.getElementById("university").value;
-            const course = document.getElementById("course").value;
-            const year = document.getElementById("year").value;
-            const message = document.getElementById("message").value;
-    
-            // Construct the WhatsApp message
-            const whatsappMessage = `Hello, I would like to make an join now:\n\n` +
-                `Name: ${name}\nEmail: ${email}\nUniversity: ${university}\n` +
-                `Course: ${course}\nYear: ${year}\nMessage: ${message}`;
-    
-            // WhatsApp API link (replace YOUR_PHONE_NUMBER with the actual number)
-            const whatsappURL = `https://wa.me/+919037420487?text=${encodeURIComponent(whatsappMessage)}`;
-    
-            // Redirect to WhatsApp
-            window.open(whatsappURL, "_blank");
-        }
+    // Collect form data
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const number = document.getElementById("number").value; // Fixed here
+    const university = document.getElementById("university").value;
+    const course = document.getElementById("course").value;
+    const year = document.getElementById("year").value;
+    const message = document.getElementById("message").value;
+
+    // Construct the WhatsApp message
+    const whatsappMessage = `Hello, I would like to join now:\n\n` +
+        `Name: ${name}\nEmail: ${email}\nPhone Number: ${number}\nUniversity: ${university}\n` +
+        `Course: ${course}\nYear: ${year}\nMessage: ${message}`;
+
+    // WhatsApp API link (replace YOUR_PHONE_NUMBER with the actual number)
+    const whatsappURL = `https://wa.me/+919037420487?text=${encodeURIComponent(whatsappMessage)}`;
+
+    // Redirect to WhatsApp
+    window.open(whatsappURL, "_blank");
+}
+
     </script>
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

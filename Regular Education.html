@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+      <title>JP EDUCATION SERVICES</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+       .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.about {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    display: block;
+    align-items: center;
+    gap: 20px;
+}
+
+.about img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+}
+.about img {
+    display: block; /* Makes the image a block element */
+    margin: 0 auto; /* Centers it horizontally */
+    max-width: 100%; /* Ensures the image is responsive */
+    height: auto; /* Maintains aspect ratio */
+    margin-bottom: 20px;
+}
+
+
+.about-text {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Vertically center content */
+    align-items: center; /* Horizontally center content */
+    text-align: center; /* Center text */
+}
+
+.about-text h1 {
+    margin-bottom: 10px;
+    font-size: 2rem; /* Adjust heading size */
+    color: #333;
+}
+
+.about-text p {
+    line-height: 1.6;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .about img {
+        max-width: 40%;
+        height: auto;
+    }
+
+    .about-text h1 {
+        font-size: 1.2rem;
+    }
+
+    .about-text p {
+        font-size: 12px;
+    }
+}
+
+    </style>
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+     <div class="container-fluid bg-white text-md-end p-0">
+        <div class="row gx-0 d-none d-lg-flex">
+            <div class="col-lg-7 px-5 text-start">
+                <div class="h-100 d-inline-flex align-items-center me-4">
+                    <small class="fa fa-map-marker-alt text-primary me-2"></small>
+                    <small>ADAMSTAR, THODUPUZHA, KERALA,685584</small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center">
+                    <small class="far fa-clock text-primary me-2"></small>
+                    <small>Mon - Fri : 09.00 AM - 09.00 PM</small>
+                </div>
+            </div>
+            <div class="col-lg-5 px-5 text-end">
+                <div class="h-100 d-inline-flex align-items-center me-4">
+                    <small class="fa fa-phone-alt text-primary me-2"></small>
+                    <small>+91 90611 81195</small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center mx-n2">
+                    <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href=""><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-square btn-link rounded-0" href=""><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+   <nav class="navbar navbar-expand-lg bg-dark navbar-light sticky-top p-0">
+         <a href="index.html" class="navbar-brand d-flex align-items-center  px-lg-5 ">
+             <img src="img/logo.svg" alt=""><h4 class="m-0 text-white"><span class="text-primary">JP EDUCATION </span>SERVICES</h4>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link ">Home</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                <a href="courses.html" class="nav-item nav-link">Courses</a>
+                <a href="university.html" class="nav-item nav-link active">Universities</a>
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
+            </div>
+            <a href="form.html" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Get Started<i class="fa fa-arrow-right ms-3"></i></a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header py-6 my-6 mt-0 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container text-center">
+            <h1 class="display-4 text-white animated slideInDown mb-4">Regular Education</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb justify-content-center mb-0">
+                    <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
+                    <li class="breadcrumb-item text-primary active" aria-current="page">Secondary &
+                        Senior Secondary Education</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+
+    <!-- Testimonial Start -->
+    <div class="container-xxl py-6">
+        <div class="container">
+           <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+               <h6 class="text-primary text-uppercase mb-2">OUR UNIVERSITIES</h6>
+               <!-- <h1 class="display-6 mb-4">Secondary And Senior Secondary Education</h1> -->
+           </div>
+           <div class="container" id="niilm">
+               <div class="about">
+                   <img src="img/NIILM.jpg" alt="UPSOSB Photo" />
+                   <div class="about-text">
+                       <h1>NIILM University</h1>
+                       <p>NIILM University is a private university located in Kaithal, Haryana, India,
+                           established with the aim of providing high-quality education across a variety of disciplines. The university oers undergraduate, postgraduate, and
+                           doctoral programs in elds such as Engineering, Management, Law, Commerce, Science, Arts, and Humanities, among others. NIILM University is
+                           committed to fostering academic excellence, skill development, and overall personality growth of its students through a blend of theoretical learning and practical application.</p>
+                       <p>The university is recognized by the University Grants Commission (UGC),
+                           making its degrees valid for higher studies and employment opportunities
+                           both within India and internationally. NIILM University focuses on imparting education that is aligned with industry needs, providing students with
+                           the knowledge and skills necessary to succeed in the competitive job
+                           market. It oers programs designed to develop critical thinking, leadership abilities, and practical skills, ensuring students are well-prepared for
+                           their professional careers.</p>
+                       <p>In addition to its academic programs, NIILM University is known for its
+                           vibrant campus life, research initiatives, and strong industry connections
+                           that help students gain valuable exposure. The university also emphasizes
+                           innovation, entrepreneurship, and community service, striving to create
+                           well-rounded individuals who can contribute positively to society. With its
+                           modern infrastructure, experienced faculty, and commitment to quality
+                           education, NIILM University is a sought-after institution for students pursuing higher education.</p>
+                       <div style="text-align: end;">
+                           <a class="btn btn-outline-primary border-2" href="form.html">JOIN NOW</a>
+                       </div>
+                   </div>
+              
+           </div> </div>
+           </div>
+           <div class="container" id="carlorx">
+               <div class="about">
+                   <img src="img/CALORX.jpg" alt="UPSOSB Photo" />
+                   <div class="about-text">
+                       <h1>Calorx Teachers' University <br>Abarmati University</h1>
+                       <p>Calorx Teachers' University, now known as Sabarmati University, is a
+                           private university located in Ahmedabad, Gujarat, India. Established in
+                           2009, the university is dedicated to delivering quality education and fostering all-round development in its students. With a mission to nurture
+                           academic excellence, Sabarmati University oers a wide spectrum of
+                           undergraduate, postgraduate, and doctoral programs in disciplines such
+                           as Education, Science, Commerce, Management, Law, Arts, Vocational
+                           Studies, and more</p>
+                           <p>The university is recognized by the University Grants Commission (UGC),
+                               ensuring the validity of its degrees for further studies and career opportunities in India and internationally. Sabarmati University provides a modern
+                               learning environment with well-equipped facilities and a learner-focused
+                               approach that emphasizes interactive teaching, hands-on training, and
+                               innovative research. Along with academics, the university promotes
+                               co-curricular and extra-curricular activities to develop critical thinking,
+                               creativity, and leadership skills among its students.</p>
+                               <p>Sabarmati University boasts a team of experienced faculty members who
+                                   are committed to fostering a culture of inquiry and innovation. The university encourages entrepreneurship, community engagement, and social
+                                   responsibility, preparing students to excel in a dynamic and competitive
+                                   global environment. With its holistic educational approach and commitment to student success, Sabarmati University aims to empower learners
+                                   to become impactful professionals and responsible citizens of the world</p>
+                       <div style="text-align: end;">
+                           <a class="btn btn-outline-primary border-2" href="form.html">JOIN NOW</a>
+                       </div>
+                   </div>
+              
+           </div> </div>
+           </div>
+           <div class="container" id="sarvepalli">
+               <div class="about">
+                   <img src="img/SAVEPPALLI.jpg" alt="UPSOSB Photo" />
+                   <div class="about-text">
+                       <h1>Sarvepalli Radhakrishnan University</h1>
+                       <p>Sarvepalli Radhakrishnan University, widely known as SRK University, is a
+                           premier private university located in Bhopal, Madhya Pradesh, India.
+                           Established in 2014 under the RKDF Education Society, the university is
+                           named in honor of Dr. Sarvepalli Radhakrishnan, a renowned philosopher
+                           and the rst Vice President of India. SRK University is committed to academic excellence and holistic student development, oering a broad range
+                           of undergraduate, postgraduate, and doctoral programs.</p>
+                       <p>The university provides programs in diverse elds, including Engineering,
+                           Technology, Pharmacy, Management, Commerce, Law, Science, Nursing,
+                           Medical Sciences, and Humanities. With its UGC recognition and aliation
+                           with the Association of Indian Universities (AIU), SRK University ensures
+                           that its degrees are widely recognized and respected for higher education
+                           and career prospects.</p>
+                           <p>SRK University features state-of-the-art infrastructure, including modern
+                               classrooms, advanced laboratories, a well-stocked library, and excellent
+                               hostel facilities. It emphasizes a learner-centric approach through interactive teaching, research initiatives, and hands-on training. The university
+                               also fosters extracurricular development, helping students cultivate leadership, critical thinking, and entrepreneurial skills.</p>
+                       <p>Backed by experienced faculty and a vision to create impactful professionals, SRK University promotes innovation, social responsibility, and global
+                           competency. With its focus on quality education and an enriching learning
+                           environment, SRK University prepares students to excel in their chosen
+                           elds and contribute meaningfully to society.</p>
+                       
+                       <div style="text-align: end;">
+                           <a class="btn btn-outline-primary border-2" href="form.html">JOIN NOW</a>
+                       </div>
+                   </div>
+              
+           </div> </div>
+           </div>
+            <div class="container" id="asian">
+                <div class="about">
+                    <img src="img/ASIAN.jpg" alt="UPSOSB Photo" />
+                    <div class="about-text">
+                        <h1>Asian International University</h1>
+                        <p>Asian International University, located in Imphal, Manipur, India, is a
+                            private institution committed to fostering academic excellence and
+                            skill-based education. Established in 2021, the university oers a wide
+                            range of programs designed to meet the demands of modern industries
+                            and equip students with practical knowledge and expertise.</p>
+                        <p>AIU provides diploma, undergraduate, postgraduate, and doctoral programs across various elds such as Management, Science, Commerce, Agriculture, Engineering, Paramedical Sciences, Hotel Management, Law, Animation, and Mass Communication. With a strong focus on vocational studies, the university ensures students gain hands-on experience and industry-relevant skills, preparing them for successful careers.
+                            </p>
+                        <p>Recognized by the University Grants Commission (UGC) and accredited by
+                            the National Assessment and Accreditation Council (NAAC), AIU upholds
+                            high academic standards. The university is also approved by the All India
+                            Council for Technical Education (AICTE), ensuring its programs meet
+                            national and international quality benchmarks.</p>
+                            <p>AIU features a state-of-the-art campus equipped with modern infrastructure, including advanced laboratories, libraries, and comfortable residential facilities. Its learner-centric environment, experienced faculty, and emphasis on research and innovation create a conducive atmosphere for
+                                holistic student development.</p>
+                        <div style="text-align: end;">
+                            <a class="btn btn-outline-primary border-2" href="form.html">JOIN NOW</a>
+                        </div>
+                    </div>
+               
+            </div> </div>
+            </div>
+        </div> 
+        <div class="container" id="au">
+            <div class="about">
+                <img src="img/AU.jpg" alt="UPSOSB Photo" />
+                <div class="about-text">
+                    <h1>Arunodaya University</h1>
+                    <p>Arunodaya University is a private university located in Itanagar, Arunachal
+                        Pradesh, India, committed to providing quality education and fostering
+                        holistic development in students. Established with the vision to promote
+                        academic excellence, Arunodaya University oers a wide range of undergraduate, postgraduate, and doctoral programs in elds such as Engineering, Management, Arts, Commerce, Law, Science, and Technology, among
+                        others. The university aims to provide a platform for students to acquire
+                        knowledge, skills, and values that are essential for personal growth and
+                        professional success.</p>
+                    <p>Arunodaya University is recognized by the University Grants Commission
+                        (UGC), ensuring that its degrees and programs are valid for further studies
+                        and employment opportunities in India and abroad. The university oers
+                        modern infrastructure, state-of-the-art facilities, and a learner-centric
+                        environment that focuses on interactive teaching methods, practical training, and research initiatives. It emphasizes both academic and extra-curricular development, aiming to cultivate leadership qualities, critical thinking, and innovative problem-solving abilities among students.</p>
+                    <p>With a dedicated and experienced faculty, Arunodaya University fosters a
+                        culture of research and innovation, preparing students to meet the challenges of the global job market. The university also encourages entrepreneurship, social responsibility, and community engagement, making it an
+                        ideal choice for students seeking a comprehensive and impactful education. Through its commitment to excellence and a supportive learning
+                        environment, Arunodaya University strives to shape future leaders and
+                        professionals.</p>
+                    <div style="text-align: end;">
+                        <a class="btn btn-outline-primary border-2" href="form.html">JOIN NOW</a>
+                    </div>
+                </div>
+           
+        </div> </div>
+        </div>  
+        <div class="container" id="arunachal">
+            <div class="about">
+                <img src="img/ARUNACHAL.jpg" alt="UPSOSB Photo" />
+                <div class="about-text">
+                    <h1>Arunachal University </h1>
+                    <p>Arunachal University is a prominent private university located in Namsai,
+                        Arunachal Pradesh, India, dedicated to providing quality higher education
+                        and promoting research, innovation, and skill development. Established
+                        with the vision of fostering academic excellence, the university oers a
+                        diverse range of undergraduate, postgraduate, and doctoral programs
+                        across various disciplines, including Engineering, Management, Law, Arts,
+                        Commerce, Science, and Humanities. Arunachal University aims to equip
+                        students with both theoretical knowledge and practical skills necessary
+                        for success in the competitive global job market.</p>
+                    <p>The university is recognized by the University Grants Commission (UGC),
+                        ensuring that its degrees are valid for higher education and employment
+                        opportunities in India and internationally. With a focus on holistic development, Arunachal University oers modern facilities, including
+                        well-equipped classrooms, research labs, libraries, and sports amenities,
+                        creating an ideal learning environment for students. The university also
+                        emphasizes a learner-centric approach, encouraging interactive teaching,
+                        project-based learning, and industry-oriented internships.</p>
+                    <p>In addition to academic rigor, Arunachal University focuses on fostering
+                        leadership qualities, critical thinking, and entrepreneurial skills. It also
+                        encourages students to engage in community service, research, and extracurricular activities. With its strong faculty, research initiatives, and commitment to student success, Arunachal University provides a comprehensive education that prepares students for professional careers and social
+                        responsibilities.</p>
+                    <div style="text-align: end;">
+                        <a class="btn btn-outline-primary border-2" href="form.html">JOIN NOW</a>
+                    </div>
+                </div>
+           
+        </div> </div>
+        </div>  
+        <div class="container" id="monad">
+            <div class="about">
+                <img src="img/MONAD.jpg" alt="UPSOSB Photo" />
+                <div class="about-text">
+                    <h1>Monad University</h1>
+                    <p>Monad University is a private university located in Hapur, Uttar Pradesh,
+                        India, established with the aim of providing high-quality education and
+                        fostering academic excellence across a wide range of disciplines. The university oers undergraduate, postgraduate, and doctoral programs in
+                        elds such as Engineering, Management, Law, Education, Science, Arts,
+                        and Commerce. Monad University focuses on nurturing well-rounded individuals who are equipped with the knowledge, skills, and values necessary
+                        to succeed in the global job market and contribute meaningfully to society.</p>
+                    <p>Monad University is recognized by the University Grants Commission
+                        (UGC), which ensures that its degrees and qualications are valid for
+                        higher education, government jobs, and private-sector employment
+                        opportunities both in India and abroad. The university provides a modern
+                        campus with state-of-the-art facilities, including well-equipped classrooms, laboratories, libraries, and sports infrastructure, creating an ideal
+                        learning environment for students. The university adopts an industry-oriented curriculum, focusing on practical training, research, and real-world
+                        applications of knowledge.</p>
+                    <p>In addition to academic excellence, Monad University emphasizes skill
+                        development, innovation, and entrepreneurship, preparing students for
+                        leadership roles and promoting critical thinking, creativity, and problem-solving abilities. With a focus on holistic development, the university
+                        encourages students to participate in extracurricular activities, social
+                        responsibility initiatives, and internships, helping them build a
+                        well-rounded personality. Monad University is committed to shaping
+                        future leaders and professionals who can make signicant contributions to
+                        society and the economy.</p>
+                    <div style="text-align: end;">
+                        <a class="btn btn-outline-primary border-2" href="form.html">JOIN NOW</a>
+                    </div>
+                </div>
+           
+        </div> </div>
+        </div>  
+        <div class="container" id="william">
+            <div class="about">
+                <img src="img/william.jpg" alt="UPSOSB Photo" />
+                <div class="about-text">
+                    <h1>William Carey University</h1>
+                    <p>William Carey University is a private university located in Shillong, Meghalaya, India, named after the renowned missionary and scholar, William
+                        Carey. The university was established with the mission of providing quality
+                        higher education that fosters academic excellence, cultural diversity, and
+                        holistic development. It oers a wide range of undergraduate, postgraduate, and doctoral programs across various elds, including Humanities,
+                        Social Sciences, Commerce, Management, Education, Science, and Technology. The university aims to provide a nurturing environment for students to develop critical thinking, leadership skills, and a sense of social
+                        responsibility.</p>
+                    <p>William Carey University is recognized by the University Grants Commission (UGC), ensuring that its degrees and programs are valid for higher
+                        education, employment opportunities, and professional growth both
+                        within India and internationally. The university features a modern campus
+                        equipped with state-of-the-art facilities such as classrooms, laboratories,
+                        libraries, sports facilities, and hostels, providing students with an excellent
+                        environment for academic and personal growth. The curriculum is
+                        designed to promote practical learning, research, and innovation, while
+                        also encouraging students to engage in community service and extracurricular activities.</p>
+                    <p>The university emphasizes values such as integrity, inclusivity, and social
+                        responsibility, encouraging students to contribute positively to society.
+                        With a dedicated faculty, strong industry connections, and a commitment
+                        to academic rigor, William Carey University strives to prepare its students
+                        to excel in their chosen elds and become leaders in their respective professions.</p>
+                    <div style="text-align: end;">
+                        <a class="btn btn-outline-primary border-2" href="form.html">JOIN NOW</a>
+                    </div>
+                </div>
+           
+        </div> </div>
+        </div>  
+        <div class="container" id="sikkim">
+            <div class="about">
+                <img src="img/SIKKIM.jpg" alt="UPSOSB Photo" />
+                <div class="about-text">
+                    <h1>Sikkim International University</h1>
+                    <p>Sikkim International University is a private university located in Sikkim,
+                        India, established with the vision of providing high-quality education that
+                        is globally relevant and accessible. The university oers a wide range of
+                        undergraduate, postgraduate, and doctoral programs across various disciplines, including Engineering, Management, Law, Science, Arts, and Technology. Sikkim International University aims to provide students with a
+                        comprehensive education that blends academic rigor with practical skills,
+                        preparing them for success in a rapidly changing world.</p>
+                    <p>The university is recognized by the University Grants Commission (UGC),
+                        ensuring that its degrees are valid for further studies, government jobs,
+                        and employment opportunities in India and internationally. Sikkim International University focuses on a student-centered approach, oering a
+                        modern campus equipped with advanced infrastructure, including
+                        well-equipped classrooms, laboratories, libraries, and recreational facilities. The curriculum is designed to foster critical thinking, innovation, and
+                        leadership skills, while also emphasizing research and development.</p>
+                    <p>Sikkim International University also places signicant importance on
+                        extracurricular activities, industry collaboration, and community engagement, oering students opportunities to gain real-world experience
+                        through internships and projects. The university’s commitment to international exposure and partnerships with global institutions ensures that its
+                        students are well-prepared for global challenges. By providing a
+                        well-rounded education and fostering a supportive learning environment,
+                        Sikkim International University aims to shape future leaders who can contribute to the development of society and the global economy.</p>
+                    <div style="text-align: end;">
+                        <a class="btn btn-outline-primary border-2" href="form.html">JOIN NOW</a>
+                    </div>
+                </div>
+           
+        </div> </div>
+        </div>  
+        <div class="container" id="paragyan">
+            <div class="about">
+                <img src="img/PARAGYAN.jpg" alt="UPSOSB Photo" />
+                <div class="about-text">
+                    <h1>Pragyan International University</h1>
+                    <p>Pragyan International University is a private university located in Ranchi,
+                        Jharkhand, India, dedicated to providing world-class education that integrates academic excellence with practical skill development. The university oers a wide array of undergraduate, postgraduate, and doctoral programs across various disciplines, including Engineering, Management,
+                        Law, Science, Arts, Commerce, and Social Sciences. Pragyan International
+                        University aims to create a global learning environment by oering programs that prepare students for success in a competitive international job
+                        market.</p>
+                    <p>The university is recognized by the University Grants Commission (UGC),
+                        ensuring that its degrees and qualications are valid for higher education,
+                        government jobs, and employment opportunities within India and globally. Pragyan International University provides a modern and well-equipped
+                        campus, featuring advanced infrastructure, including state-of-the-art
+                        classrooms, laboratories, libraries, sports facilities, and hostels, creating
+                        an optimal environment for academic and personal growth.</p>
+                    <p>Pragyan International University is focused on developing skills that are
+                        critical for professional success, such as leadership, critical thinking, creativity, and innovation. The university emphasizes hands-on learning,
+                        research, and industry collaboration, giving students opportunities to
+                        gain practical experience through internships, projects, and international
+                        exposure. In addition to academics, the university promotes extracurricular activities, entrepreneurship, and community engagement, ensuring a
+                        holistic approach to education. With its commitment to providing quality
+                        education and preparing students for global challenges, Pragyan International University aims to shape future leaders and professionals who can
+                        make meaningful contributions to society and the global economy.</p>
+                    <div style="text-align: end;">
+                        <a class="btn btn-outline-primary border-2" href="form.html">JOIN NOW</a>
+                    </div>
+                </div>
+           
+        </div> </div>
+        </div>  
+        <div class="container" id="himalayan">
+            <div class="about">
+                <img src="img/HIMALAYAN.jpg" alt="UPSOSB Photo" />
+                <div class="about-text">
+                    <h1>Himalayan Garhwal University</h1>
+                    <p>Himalayan Garhwal University is a private university located in Srinagar,
+                        Uttarakhand, India, established with the goal of providing high-quality
+                        education that emphasizes academic excellence, innovation, and holistic
+                        development. The university oers a diverse range of undergraduate,
+                        postgraduate, and doctoral programs in elds such as Engineering, Management, Law, Arts, Science, Commerce, Social Sciences, and more. Himalayan Garhwal University aims to nurture the intellectual, creative, and
+                        leadership potential of its students, equipping them with the necessary
+                        skills for success in the modern global job market.</p>
+                    <p>The university is recognized by the University Grants Commission (UGC),
+                        ensuring that its degrees and qualications are valid for further education,
+                        government jobs, and private-sector employment opportunities in India
+                        and internationally. Himalayan Garhwal University boasts a modern
+                        campus with state-of-the-art facilities, including advanced classrooms,
+                        laboratories, libraries, sports amenities, and hostels, providing students
+                        with a conducive environment for academic and personal growth.</p>
+                    <p>The university adopts a student-centric approach, combining theoretical
+                        knowledge with practical applications through hands-on learning,
+                        research projects, and industry internships. It emphasizes the development of critical thinking, leadership, and entrepreneurial skills, while
+                        encouraging students to participate in extracurricular activities and community engagement initiatives. With a focus on research, skill development, and global exposure, Himalayan Garhwal University prepares students to become leaders in their chosen elds and to contribute meaningfully to society and the global economy.</p>
+                    <div style="text-align: end;">
+                        <a class="btn btn-outline-primary border-2" href="form.html">JOIN NOW</a>
+                    </div>
+                </div>
+           
+        </div> </div>
+        </div>  
+        <div class="container" id="glocal">
+            <div class="about">
+                <img src="img/GLOCAL.jpg" alt="UPSOSB Photo" />
+                <div class="about-text">
+                    <h1>Glocal University</h1>
+                    <p>Glocal University is a private university located in Saharanpur, Uttar
+                        Pradesh, India, established with the mission of providing world-class education that blends academic excellence, innovation, and skill development. The university oers a wide range of undergraduate, postgraduate,
+                        and doctoral programs across various disciplines, including Engineering,
+                        Management, Law, Science, Arts, Commerce, and Social Sciences. Glocal
+                        University focuses on preparing students for global challenges by providing them with a comprehensive education that combines theoretical learning with practical exposure.</p>
+                    <p>The university is recognized by the University Grants Commission (UGC),
+                        ensuring that its degrees and qualications are valid for further studies,
+                        government jobs, and employment opportunities both in India and internationally. Glocal University features a modern campus equipped with
+                        state-of-the-art infrastructure, including advanced classrooms, research
+                        labs, libraries, sports facilities, and hostels, creating an optimal learning
+                        environment.</p>
+                    <p>With a focus on holistic development, Glocal University emphasizes the
+                        development of critical thinking, leadership skills, and problem-solving
+                        abilities among students. The university oers various opportunities for
+                        industry exposure, internships, research projects, and international collaborations, ensuring that students gain real-world experience and stay
+                        ahead in a competitive job market. Additionally, the university encourages
+                        extracurricular activities, entrepreneurship, and community involvement,
+                        helping students build well-rounded personalities. Through its commitment to quality education and student success, Glocal University aims to
+                        produce graduates who are ready to excel in their careers and contribute
+                        positively to society and the global economy.</p>
+                    <div style="text-align: end;">
+                        <a class="btn btn-outline-primary border-2" href="form.html">JOIN NOW</a>
+                    </div>
+                </div>
+           
+        </div> </div>
+        </div>  
+    </div>
+    <!-- Testimonial End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer my-6 mb-0 py-6 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-4">Get In Touch</h4>
+                      <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>ADAMSTAR, THODUPUZHA, KERALA,685584</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 90611 81195</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Quick Links</h4>
+                    <a class="btn btn-link" href="">About Us</a>
+                    <a class="btn btn-link" href="">Contact Us</a>
+                    <a class="btn btn-link" href="">Our Services</a>
+                    <a class="btn btn-link" href="">Terms & Condition</a>
+                    <a class="btn btn-link" href="">Support</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Popular Links</h4>
+                    <a class="btn btn-link" href="">About Us</a>
+                    <a class="btn btn-link" href="">Contact Us</a>
+                    <a class="btn btn-link" href="">Our Services</a>
+                    <a class="btn btn-link" href="">Terms & Condition</a>
+                    <a class="btn btn-link" href="">Support</a>
+                </div>
+               <div class="col-lg-3 col-md-6">
+                   
+                    <h6 class="text-white mt-4 mb-3">Follow Us</h6>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-square btn-outline-light me-1" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-outline-light me-1" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-outline-light me-1" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square btn-outline-light me-0" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright text-light py-4 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a href="#">Your Site Name</a>, All Right Reserved.
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                    Designed By <a href="https://htmlcodex.com">HTML Codex</a>
+                    <br>Distributed By: <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

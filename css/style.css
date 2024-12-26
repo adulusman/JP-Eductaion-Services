@@ -1,16 +1,28 @@
 /********** Template CSS **********/
+body{}
 :root {
-    --primary: #F3BD00;
+    --primary: #fcd66a;
     --secondary: #757575;
     --light: #F3F6F8;
     --dark: #0C2B4B;
 }
 
-/* Hide on Mobile */
 @media (max-width: 768px) {
-.hide-on-mobile {
-display: none; /* Completely hide the element */
-}
+    .navbar-brand img {
+        max-width: 70px; /* Reduce logo size */
+        height: auto; /* Maintain aspect ratio */
+        /* position: relative;
+        right: 20px; */
+    }
+
+    .navbar-brand h4 {
+        font-size: 0.9rem; /* Reduce heading size */
+        margin-left: 5px; /* Reduce spacing */
+        /* position: relative;
+        right: 20px; */
+    }
+
+    
 }
 
 
@@ -262,7 +274,7 @@ display: none; /* Completely hide the element */
 /*** Courses ***/
 .courses {
     min-height: 100vh;
-    background: linear-gradient(rgba(255, 255, 255, .9), rgba(255, 255, 255, .9)), url(../img/carousel-1.jpg) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(5, 5, 5, 0.9)), url(../img/carousel-1.jpg) center center no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
@@ -287,7 +299,11 @@ display: none; /* Completely hide the element */
     opacity: 1;
 }
 
-
+.imges{
+    width: 200px;
+    border-radius: 100%;
+    overflow: hidden;
+}
 /*** Team ***/
 .team-items {
     margin: -.75rem;

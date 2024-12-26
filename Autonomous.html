@@ -29,6 +29,76 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <style>
+        .container {
+     max-width: 1200px;
+     margin: 0 auto;
+     padding: 20px;
+ }
+ 
+ .about {
+     background-color: #f4f4f4;
+     padding: 20px;
+     border-radius: 8px;
+     display: block;
+     align-items: center;
+     gap: 20px;
+ }
+ 
+ .about img {
+     width: 200px;
+     height: auto;
+     border-radius: 8px;
+ }
+ .about img {
+     display: block; /* Makes the image a block element */
+     margin: 0 auto; /* Centers it horizontally */
+     max-width: 100%; /* Ensures the image is responsive */
+     height: auto; /* Maintains aspect ratio */
+     margin-bottom: 20px;
+ }
+ 
+ 
+ .about-text {
+     display: flex;
+     flex-direction: column; /* Stack elements vertically */
+     justify-content: center; /* Vertically center content */
+     align-items: center; /* Horizontally center content */
+     text-align: center; /* Center text */
+ }
+ 
+ .about-text h1 {
+     margin-bottom: 10px;
+     font-size: 2rem; /* Adjust heading size */
+     color: #333;
+ }
+ 
+ .about-text p {
+     line-height: 1.6;
+     color: #555;
+ }
+ 
+ @media (max-width: 768px) {
+     .container {
+         width: 100%;
+         padding: 10px;
+     }
+ 
+     .about img {
+         max-width: 40%;
+         height: auto;
+     }
+ 
+     .about-text h1 {
+         font-size: 1.2rem;
+     }
+ 
+     .about-text p {
+         font-size: 12px;
+     }
+ }
+ 
+     </style>
 </head>
 
 <body>
@@ -71,31 +141,21 @@
 
     <!-- Navbar Start -->
    <nav class="navbar navbar-expand-lg bg-dark navbar-light sticky-top p-0">
-        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5 ">
-            <img src="img/logo.svg" alt=""><h4 class="m-0 text-white hide-on-mobile"><span class="text-primary">JP EDUCATION </span>SERVICES</h4>
+         <a href="index.html" class="navbar-brand d-flex align-items-center  px-lg-5 ">
+             <img src="img/logo.svg" alt=""><h4 class="m-0 text-white"><span class="text-primary">JP EDUCATION </span>SERVICES</h4>
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link">Home</a>
+                <a href="index.html" class="nav-item nav-link ">Home</a>
                 <a href="about.html" class="nav-item nav-link">About</a>
                 <a href="courses.html" class="nav-item nav-link">Courses</a>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Pages</a>
-                    <div class="dropdown-menu bg-light m-0">
-                        <a href="feature.html" class="dropdown-item">Features</a>
-                        <a href="appointment.html" class="dropdown-item">Appointment</a>
-                        <a href="team.html" class="dropdown-item">Our Team</a>
-                        <a href="testimonial.html" class="dropdown-item active">Testimonial</a>
-                        <a href="404.html" class="dropdown-item">404 Page</a>
-                    </div>
-                </div>
+                <a href="university.html" class="nav-item nav-link active">Universities</a>
                 <a href="contact.html" class="nav-item nav-link">Contact</a>
             </div>
-           <a href="form.html" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Get Started<i
-                    class="fa fa-arrow-right ms-3"></i></a>
+            <a href="form.html" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Get Started<i class="fa fa-arrow-right ms-3"></i></a>
         </div>
     </nav>
     <!-- Navbar End -->
@@ -104,12 +164,12 @@
     <!-- Page Header Start -->
     <div class="container-fluid page-header py-6 my-6 mt-0 wow fadeIn" data-wow-delay="0.1s">
         <div class="container text-center">
-            <h1 class="display-4 text-white animated slideInDown mb-4">Testimonial</h1>
+            <h1 class="display-4 text-white animated slideInDown mb-4">Autonomous</h1>
             <nav aria-label="breadcrumb animated slideInDown">
                 <ol class="breadcrumb justify-content-center mb-0">
                     <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
                     <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
-                    <li class="breadcrumb-item text-primary active" aria-current="page">Testimonial</li>
+                    <li class="breadcrumb-item text-primary active" aria-current="page">Autonomous </li>
                 </ol>
             </nav>
         </div>
@@ -119,54 +179,77 @@
 
     <!-- Testimonial Start -->
     <div class="container-xxl py-6">
-        <div class="container">
+         <div class="container">
             <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                <h6 class="text-primary text-uppercase mb-2">Testimonial</h6>
-                <h1 class="display-6 mb-4">What Our Clients Say!</h1>
+                <h6 class="text-primary text-uppercase mb-2">OUR UNIVERSITIES</h6>
+                <!-- <h1 class="display-6 mb-4">Secondary And Senior Secondary Education</h1> -->
             </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-8 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="owl-carousel testimonial-carousel">
-                        <div class="testimonial-item text-center">
-                            <div class="position-relative mb-5">
-                                <img class="img-fluid rounded-circle mx-auto" src="img/testimonial-1.jpg" alt="">
-                                <div class="position-absolute top-100 start-50 translate-middle d-flex align-items-center justify-content-center bg-white rounded-circle" style="width: 60px; height: 60px;">
-                                    <i class="fa fa-quote-left fa-2x text-primary"></i>
-                                </div>
-                            </div>
-                            <p class="fs-4">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat.</p>
-                            <hr class="w-25 mx-auto">
-                            <h5>Client Name</h5>
-                            <span>Profession</span>
-                        </div>
-                        <div class="testimonial-item text-center">
-                            <div class="position-relative mb-5">
-                                <img class="img-fluid rounded-circle mx-auto" src="img/testimonial-2.jpg" alt="">
-                                <div class="position-absolute top-100 start-50 translate-middle d-flex align-items-center justify-content-center bg-white rounded-circle" style="width: 60px; height: 60px;">
-                                    <i class="fa fa-quote-left fa-2x text-primary"></i>
-                                </div>
-                            </div>
-                            <p class="fs-4">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat.</p>
-                            <hr class="w-25 mx-auto">
-                            <h5>Client Name</h5>
-                            <span>Profession</span>
-                        </div>
-                        <div class="testimonial-item text-center">
-                            <div class="position-relative mb-5">
-                                <img class="img-fluid rounded-circle mx-auto" src="img/testimonial-3.jpg" alt="">
-                                <div class="position-absolute top-100 start-50 translate-middle d-flex align-items-center justify-content-center bg-white rounded-circle" style="width: 60px; height: 60px;">
-                                    <i class="fa fa-quote-left fa-2x text-primary"></i>
-                                </div>
-                            </div>
-                            <p class="fs-4">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat.</p>
-                            <hr class="w-25 mx-auto">
-                            <h5>Client Name</h5>
-                            <span>Profession</span>
+            <div class="container" id="swu">
+                <div class="about">
+                    <img src="img/bharat.jpg" alt="UPSOSB Photo" />
+                    <div class="about-text">
+                        <h1>Bharat Sevak Samaj (BSS)  </h1>
+                        <p>Bharat Sevak Samaj (BSS) is a national development agency founded by
+                            the Government of India, under the Planning Commission, with the primary objective of promoting public cooperation in the implementation of
+                            various government plans and policies. Recognized by the Indian Parliament, BSS has been working to enhance education accessibility, social
+                            equality, and promote lifelong learning opportunities for all sections of
+                            society.</p>
+                        <p>BSS is dedicated to improving public welfare by delivering education and
+                            skill development programs across India, particularly targeting marginalized and underserved communities. It has a strong focus on vocational
+                            education and training, oering a variety of courses through its established Vocational and IT Education Institutes. These institutes provide
+                            training in a wide range of elds, from technical skills to soft skills, aimed
+                            at preparing individuals for employment and self-sustainability.</p>
+                        <p>The BSS National Vocational Training Mission is one of the major initiatives
+                            of Bharat Sevak Samaj, oering programs with durations ranging from 1 to
+                            2 years. These programs are designed to equip students with practical
+                            skills that are highly valued in the job market, improving employability
+                            and economic stability. The courses are delivered through well-equipped
+                            training centers, which have modern infrastructure and in-house facilities
+                            that support hands-on learning and skill development.</p>
+                        <p>In addition to its vocational training programs, BSS works toward the empowerment of individuals through its educational outreach, contributing
+                            to building a more skilled, inclusive, and socially equitable society.
+                            Through its varied initiatives, Bharat Sevak Samaj plays a vital role in supporting the nation’s socio-economic progress and human resource development.</p>
+                        <div style="text-align: end;">
+                            <a class="btn btn-outline-primary border-2" href="form.html">JOIN NOW</a>
                         </div>
                     </div>
-                </div>
+               
+            </div> </div>
             </div>
-        </div>
+            <div class="container" id="bosse">
+                <div class="about">
+                    <img src="img/swu.png" alt="UPSOSB Photo" />
+                    <div class="about-text">
+                        <h1>South Indian University </h1>
+                        <p>South Indian University, Maharashtra is a private university located in Maharashtra, India, dedicated to providing high-quality education in a variety of disciplines. The university oers undergraduate, postgraduate, and
+                            doctoral programs in elds such as Engineering, Management, Science,
+                            Arts, Commerce, Law, and Social Sciences. South Indian University aims to
+                            foster academic excellence, critical thinking, and holistic development
+                            among its students, preparing them for successful careers and leadership
+                            roles in their respective elds.</p>
+                        <p>The university is recognized by the University Grants Commission (UGC),
+                            ensuring that its degrees and qualications are valid for further studies,
+                            government jobs, and employment opportunities in India and abroad. The
+                            campus is equipped with modern infrastructure, including advanced classrooms, laboratories, libraries, sports facilities, and hostels, providing a
+                            conducive environment for learning and personal growth.</p>
+                        <p>South Indian University emphasizes practical learning, industry exposure,
+                            and research. The university oers various opportunities for internships,
+                            industry projects, and collaborations with global organizations, ensuring
+                            students gain real-world experience and stay competitive in the job
+                            market. Additionally, the university promotes extracurricular activities,
+                            leadership development, and community service, encouraging students to
+                            become responsible and socially conscious professionals. Through its commitment to academic rigor and student success, South Indian University
+                            aims to produce well-rounded graduates who can contribute positively to
+                            society and the global economy</p>
+                        
+
+                        <div style="text-align: end;">
+                            <a class="btn btn-outline-primary border-2" href="form.html">JOIN NOW</a>
+                        </div>
+                    </div>
+               
+            </div> </div>
+            </div>       
     </div>
     <!-- Testimonial End -->
 

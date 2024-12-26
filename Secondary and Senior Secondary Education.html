@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+      <title>JP EDUCATION SERVICES</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        .container {
+     max-width: 1200px;
+     margin: 0 auto;
+     padding: 20px;
+ }
+ 
+ .about {
+     background-color: #f4f4f4;
+     padding: 20px;
+     border-radius: 8px;
+     display: block;
+     align-items: center;
+     gap: 20px;
+ }
+ 
+ .about img {
+     width: 200px;
+     height: auto;
+     border-radius: 8px;
+ }
+ .about img {
+     display: block; /* Makes the image a block element */
+     margin: 0 auto; /* Centers it horizontally */
+     max-width: 100%; /* Ensures the image is responsive */
+     height: auto; /* Maintains aspect ratio */
+     margin-bottom: 20px;
+ }
+ 
+ 
+ .about-text {
+     display: flex;
+     flex-direction: column; /* Stack elements vertically */
+     justify-content: center; /* Vertically center content */
+     align-items: center; /* Horizontally center content */
+     text-align: center; /* Center text */
+ }
+ 
+ .about-text h1 {
+     margin-bottom: 10px;
+     font-size: 2rem; /* Adjust heading size */
+     color: #333;
+ }
+ 
+ .about-text p {
+     line-height: 1.6;
+     color: #555;
+ }
+ 
+ @media (max-width: 768px) {
+     .container {
+         width: 100%;
+         padding: 10px;
+     }
+ 
+     .about img {
+         max-width: 40%;
+         height: auto;
+     }
+ 
+     .about-text h1 {
+         font-size: 1.2rem;
+     }
+ 
+     .about-text p {
+         font-size: 12px;
+     }
+ }
+ 
+     </style>
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+     <div class="container-fluid bg-white text-md-end p-0">
+        <div class="row gx-0 d-none d-lg-flex">
+            <div class="col-lg-7 px-5 text-start">
+                <div class="h-100 d-inline-flex align-items-center me-4">
+                    <small class="fa fa-map-marker-alt text-primary me-2"></small>
+                    <small>ADAMSTAR, THODUPUZHA, KERALA,685584</small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center">
+                    <small class="far fa-clock text-primary me-2"></small>
+                    <small>Mon - Fri : 09.00 AM - 09.00 PM</small>
+                </div>
+            </div>
+            <div class="col-lg-5 px-5 text-end">
+                <div class="h-100 d-inline-flex align-items-center me-4">
+                    <small class="fa fa-phone-alt text-primary me-2"></small>
+                    <small>+91 90611 81195</small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center mx-n2">
+                    <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href=""><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-square btn-link rounded-0" href=""><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+   <nav class="navbar navbar-expand-lg bg-dark navbar-light sticky-top p-0">
+         <a href="index.html" class="navbar-brand d-flex align-items-center  px-lg-5 ">
+             <img src="img/logo.svg" alt=""><h4 class="m-0 text-white"><span class="text-primary">JP EDUCATION </span>SERVICES</h4>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link ">Home</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                <a href="courses.html" class="nav-item nav-link">Courses</a>
+                <a href="university.html" class="nav-item nav-link active">Universities</a>
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
+            </div>
+            <a href="form.html" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Get Started<i class="fa fa-arrow-right ms-3"></i></a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header py-6 my-6 mt-0 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container text-center">
+            <h1 class="display-4 text-white animated slideInDown mb-4">Secondary &
+                Senior Secondary Education</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb justify-content-center mb-0">
+                    <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
+                    <li class="breadcrumb-item text-primary active" aria-current="page">Secondary &
+                        Senior Secondary Education</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+
+    <!-- Testimonial Start -->
+    <div class="container-xxl py-6">
+         <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <h6 class="text-primary text-uppercase mb-2">OUR UNIVERSITIES</h6>
+                <!-- <h1 class="display-6 mb-4">Secondary And Senior Secondary Education</h1> -->
+            </div>
+            <div class="container" id="swu">
+                <div class="about">
+                    <img src="img/swu.png" alt="UPSOSB Photo" />
+                    <div class="about-text">
+                        <h1>The Uttar Pradesh State Open School Board (UPSOSB)</h1>
+                        <p>The Uttar Pradesh State Open School Board (UPSOSB) is a state-level educational board dedicated to providing open and distance learning opportunities to individuals who cannot attend regular schools due to various constraints. It offers flexible and inclusive education programs for diverse learners, including school dropouts, homemakers, working professionals, and individuals from rural or remote areas.</p>
+                        <p>UPSOSB provides qualifications at multiple levels, including Secondary Education (Class 10), equivalent to high school, offering core and optional subjects for students aged 14 and above, and Senior Secondary Education (Class 12), equivalent to higher secondary education, with streams in Science, Commerce, and Arts.</p>
+                        <p>The board also offers Vocational Education to enhance employability through skill-based training in fields like IT, healthcare, agriculture, and more, alongside Bridge Courses to help learners fill educational gaps and transition to the next academic level.</p>
+                        <p>With features like subject flexibility, a credit transfer system, multiple exam cycles, and no upper age limit for enrollment, UPSOSB ensures accessible education for all. Schools under UPSOSB are recognized by the Government of Uttar Pradesh, and the certifications provided are widely accepted for further education, government and private-sector employment, and skill enhancement programs. These recognitions enhance the credibility and value of UPSOSB qualifications, empowering individuals to pursue higher education or career opportunities while fostering lifelong learning and personal development.</p>
+                        <div style="text-align: end;">
+                            <a class="btn btn-outline-primary border-2" href="form.html">JOIN NOW</a>
+                        </div>
+                    </div>
+               
+            </div> </div>
+            </div>
+            <div class="container" id="bosse">
+                <div class="about">
+                    <img src="img/bosse.png" alt="UPSOSB Photo" />
+                    <div class="about-text">
+                        <h1>The Board of Open Schooling and Skill Education (BOSSE)</h1>
+                        <p>The Board of Open Schooling and Skill Education (BOSSE) is a national-level open school board established to provide exible, inclusive, and quality
+                            education to individuals who cannot attend conventional schools.
+                            Designed on the lines of the National Institute of Open Schooling (NIOS),
+                            BOSSE caters to diverse learners, including school dropouts, working professionals, homemakers, and those seeking to complete their schooling or
+                            acquire vocational skills. It oers qualications at various levels, including
+                            Secondary Education (Class 10), equivalent to high school, and Senior Secondary Education (Class 12), equivalent to higher secondary schooling,
+                            with multiple streams such as Science, Commerce, and Arts. BOSSE also
+                            provides vocational and skill-based education in areas like IT, agriculture,
+                            healthcare, and other industry-relevant elds to enhance employability.
+                            Additional features include learner-friendly policies like subject exibility,
+                            credit transfer, multiple exam cycles, and no upper age limit for enrollment, ensuring accessible education for all. BOSSE is recognized by the
+                            Government of India, and its certications are widely accepted by universities, professional institutions, and employers across sectors, making its
+                            qualications valuable for higher education, government and private-sector jobs, and skill development. This recognition underlines BOSSE’s mission to empower learners with accessible, aordable, and quality education while fostering personal growth and career advancement.</p>
+                        <div style="text-align: end;">
+                            <a class="btn btn-outline-primary border-2" href="form.html">JOIN NOW</a>
+                        </div>
+                    </div>
+               
+            </div> </div>
+            </div>
+            <div class="container" id="aligath">
+                <div class="about">
+                    <img src="img/aligath.jpg" alt="UPSOSB Photo" />
+                    <div class="about-text">
+                        <h1>Jamia Urdu Aligarh </h1>
+                        <p>Jamia Urdu Aligarh is a renowned educational institution in India, established with the mission to promote Urdu language, literature, and education among diverse communities. Founded in Aligarh, Uttar Pradesh, it
+                            holds a special place as a center for non-formal education, catering to students who seek to complete their education outside the traditional schooling system. Jamia Urdu Aligarh oers exible and inclusive programs that
+                            focus on secondary and senior secondary education, as well as advanced
+                            courses in Urdu and other disciplines.</p>
+                        <p>The institution is recognized for its contribution to preserving and promoting the Urdu language while providing educational qualications that are
+                            widely acknowledged. Certicates and degrees issued by Jamia Urdu
+                            Aligarh are recognized by the Government of India and accepted for further studies, professional courses, and government and private-sector employment. In addition to academic programs, Jamia Urdu Aligarh emphasizes skill development and vocational training, enabling students to
+                            enhance their career prospects. Its inclusive policies, open enrollment
+                            options, and a learner-centric approach make it a valuable institution for
+                            individuals from various backgrounds, fostering education, cultural heritage, and personal growth.</p>
+                        
+                        <div style="text-align: end;">
+                            <a class="btn btn-outline-primary border-2" href="form.html">JOIN NOW</a>
+                        </div>
+                    </div>
+               
+            </div> </div>
+            </div>
+            <div class="container" id="nios">
+                <div class="about">
+                    <img src="img/nios.png" alt="UPSOSB Photo" />
+                    <div class="about-text">
+                        <h1>The National Institute of Open Schooling (NIOS)</h1>
+                        <p>The National Institute of Open Schooling (NIOS) is a premier educational
+                            board in India that provides exible and accessible education to a wide
+                            range of learners through open and distance learning. Established by the
+                            Ministry of Education, Government of India, NIOS aims to cater to the educational needs of children, youth, adults, and people with special needs
+                            who require an alternative to the traditional schooling system. It oers various programs at the secondary (Class 10) and senior secondary (Class 12)
+                            levels, as well as vocational education and training.</p>
+                        <p>NIOS provides a wide range of subjects in dierent streams, including Science, Commerce, Arts, and Vocational courses, allowing students to choose
+                            subjects according to their interests and career aspirations. The board is
+                            also known for its exible learning options, with students allowed to study
+                            at their own pace, choose examination centers, and appear for exams in
+                            multiple cycles. There are no age restrictions for enrollment, making NIOS
+                            an ideal platform for school dropouts, working professionals, homemakers, and others who wish to complete their education.
+                            </p>
+                        <p>Recognized by the Government of India, NIOS certicates are valid for
+                            higher education, government jobs, and various professional courses. Its
+                            qualications are accepted by universities, colleges, and employers across
+                            India and internationally. NIOS also oers skill development programs to
+                            enhance employability, contributing to personal and professional growth.
+                            Through its inclusive and accessible approach, NIOS plays a crucial role in
+                            promoting lifelong learning and empowering individuals to achieve their
+                            educational and career goals.</p>
+                        <div style="text-align: end;">
+                            <a class="btn btn-outline-primary border-2" href="form.html">JOIN NOW</a>
+                        </div>
+                    </div>
+               
+            </div> </div>
+            </div>
+        </div> 
+        <div class="container" id="bshe">
+            <div class="about">
+                <img src="img/bseh.png" alt="UPSOSB Photo" />
+                <div class="about-text">
+                    <h1>The Board of Secondary and Higher Education (BSHE)</h1>
+                    <p>The Board of Secondary and Higher Education (BSHE) Hubli is an educational board based in Hubli, Karnataka, India, dedicated to providing secondary and higher secondary education through open and distance learning. BSHE Hubli is recognized by the Government of Karnataka and oers
+                        exible learning options to cater to a wide range of learners, including
+                        school dropouts, working professionals, and others who seek an alternative to traditional classroom-based education.</p>
+                    <p>BSHE Hubli provides qualications at the secondary (Class 10) and senior
+                        secondary (Class 12) levels, with a range of subjects available to suit the
+                        needs of diverse learners. The board emphasizes a learner-centric
+                        approach, allowing students to choose subjects according to their interests and complete their education at their own pace. It also oers vocational and skill-based education to enhance employability, with a focus on
+                        practical training and real-world applications.</p>
+                    <p>The certications provided by BSHE Hubli are recognized by educational
+                        institutions, government agencies, and private-sector organizations,
+                        making them valuable for pursuing higher education, skill development,
+                        and career opportunities. The board’s open learning environment ensures
+                        that education is accessible to individuals across various backgrounds,
+                        promoting lifelong learning and supporting the educational needs of the
+                        community.</p>
+                    <div style="text-align: end;">
+                        <a class="btn btn-outline-primary border-2" href="form.html">JOIN NOW</a>
+                    </div>
+                </div>
+           
+        </div> </div>
+        </div>        
+    </div>
+    <!-- Testimonial End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer my-6 mb-0 py-6 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-4">Get In Touch</h4>
+                      <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>ADAMSTAR, THODUPUZHA, KERALA,685584</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 90611 81195</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Quick Links</h4>
+                    <a class="btn btn-link" href="">About Us</a>
+                    <a class="btn btn-link" href="">Contact Us</a>
+                    <a class="btn btn-link" href="">Our Services</a>
+                    <a class="btn btn-link" href="">Terms & Condition</a>
+                    <a class="btn btn-link" href="">Support</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Popular Links</h4>
+                    <a class="btn btn-link" href="">About Us</a>
+                    <a class="btn btn-link" href="">Contact Us</a>
+                    <a class="btn btn-link" href="">Our Services</a>
+                    <a class="btn btn-link" href="">Terms & Condition</a>
+                    <a class="btn btn-link" href="">Support</a>
+                </div>
+               <div class="col-lg-3 col-md-6">
+                   
+                    <h6 class="text-white mt-4 mb-3">Follow Us</h6>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-square btn-outline-light me-1" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-outline-light me-1" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-outline-light me-1" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square btn-outline-light me-0" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright text-light py-4 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a href="#">Your Site Name</a>, All Right Reserved.
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                    Designed By <a href="https://htmlcodex.com">HTML Codex</a>
+                    <br>Distributed By: <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
