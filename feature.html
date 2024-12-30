@@ -78,6 +78,26 @@
     transform: rotate(360deg);
   }
 }
+/* Mobile-specific adjustments */
+@media (max-width: 768px) {
+    .carousel-inner .row {
+        display: flex;
+        flex-direction: column; /* Ensure items stack vertically */
+        align-items: center;
+    }
+
+    .carousel-item {
+        display: flex;
+        justify-content: center; /* Center items in the carousel */
+    }
+
+    .col-12 {
+        max-width: 100%; /* Full width for each item */
+        margin-bottom: 20px; /* Add spacing between items */
+    }
+
+}
+
 
     </style>
 </head>
