@@ -29,9 +29,29 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <style>
+        .container-text-center img {
+          max-height: 200px; /* Adjust the height of pictures */
+          object-fit: cover; /* Ensures the image fits nicely */
+      }
+      
+      h1, h3 {
+          color: #333; /* Change to match your theme */
+      }
+      
+      .row img {
+          transition: transform 0.3s ease; /* Adds hover effect */
+      }
+      
+      .row img:hover {
+          transform: scale(1.05); /* Slight zoom on hover */
+      }
+      
+      
+          </style>
 </head>
 
-<body>
+<body class="bg-dark">
     <!-- Spinner Start -->
     <div id="spinner"
         class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
@@ -127,43 +147,34 @@
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="h-100">
                         <h6 class="text-primary text-uppercase mb-2">About Us</h6>
-                        <h1 class="display-6 mb-4">We Help Students To Pass Exams</h1>
-                        <p>We are thrilled to announce a groundbreaking milestone in our journey to provide exceptional
+                        <h1 class="display-6 mb-4 text-white">We Help Students To Pass Exams</h1>
+                        <p class="text-white">We are thrilled to announce a groundbreaking milestone in our journey to provide exceptional
                             education opportunities! JP Education Services has proudly collaborated with 36 prestigious
                             universities, further solidifying our commitment to delivering quality education to students
                             worldwide.
                         </p>
-                        <p class="mb-4">JP Education Services is dedicated to empowering students with access to
+                        <p class="mb-4 text-white">JP Education Services is dedicated to empowering students with access to
                             world-class education. Our mission is to guide learners in achieving their academic and
                             career aspirations through personalized support and global partnerships.</p>
                         <div class="row g-2 mb-4 pb-2">
-                            <div class="col-sm-6">
+                            <div class="col-sm-6 text-white">
                                 <i class="fa fa-check text-primary me-2"></i>Fully Licensed
                             </div>
-                            <div class="col-sm-6">
+                            <div class="col-sm-6 text-white">
                                 <i class="fa fa-check text-primary me-2"></i>Online Tracking
                             </div>
-                            <div class="col-sm-6">
+                            <div class="col-sm-6 text-white">
                                 <i class="fa fa-check text-primary me-2"></i>Afordable Fee
                             </div>
-                            <div class="col-sm-6">
+                            <div class="col-sm-6 text-white" >
                                 <i class="fa fa-check text-primary me-2"></i>Best Trainers
                             </div>
                         </div>
                         <div class="row g-4">
                             <div class="col-sm-6">
-                                <a class="btn btn-primary py-3 px-5" href="">Read More</a>
+                                <a id="download"  class="btn btn-primary py-3 px-5" role="button" href="img/nexnova.png" download="img/nexnova.png">Download</a>
                             </div>
-                            <div class="col-sm-6">
-                                <a class="d-inline-flex align-items-center btn btn-outline-primary border-2 p-2"
-                                    href="tel:+0123456789">
-                                    <span class="flex-shrink-0 btn-square bg-primary">
-                                        <i class="fa fa-phone-alt text-white"></i>
-                                    </span>
-                                    <span class="px-3">+91 90611 81195
-                                    </span>
-                                </a>
-                            </div>
+                           
                         </div>
                     </div>
                 </div>
@@ -172,91 +183,33 @@
     </div>
     <!-- About End -->
 
-
-    <!-- Team Start -->
-    <div class="container-xxl py-6">
-        <div class="container">
-            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                <h6 class="text-primary text-uppercase mb-2">Meet The Team</h6>
-                <h1 class="display-6 mb-4">We Have Expert Trainers</h1>
+    <div class="container text-center my-5 bg-dark ">
+        <!-- Centered Picture -->
+        <img src="img/logo.svg" alt="Centered Picture" class="img-fluid mb-4" style="width: 200px;">
+    
+        <!-- H1 Heading -->
+        <h1 class="mb-3 text-primary">JP EDUCATION SERVICES <br> <h4 class="text-white" style="padding-bottom: 50px;">FREE ADMISSION INFORMATION CENTER</h4></h1>
+    
+    
+        <!-- Picture Container -->
+        <!-- Big Picture Container -->
+        <div class="row" style="border:solid 2px; border-radius: 20px;">
+            <h4 class="mb-4 text-white" style="padding-top: 20px ;padding-bottom: 20px;">WE HAVE THE FOLLOWING CERTIFICATES </h4>
+            <!-- Picture 1 -->
+            <div class="col-md-3 col-sm-6 mb-4">
+                <img src="img/iso.jpg" alt="Picture 1" class="img-fluid rounded shadow">
             </div>
-            <div class="row g-0 team-items">
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="team-item position-relative">
-                        <div class="position-relative">
-                            <img class="img-fluid" src="img/team-1.jpg" alt="">
-                            <div class="team-social text-center">
-                                <a class="btn btn-square btn-outline-primary border-2 m-1" href=""><i
-                                        class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square btn-outline-primary border-2 m-1" href=""><i
-                                        class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square btn-outline-primary border-2 m-1" href=""><i
-                                        class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="bg-light text-center p-4">
-                            <h5 class="mt-2">Full Name</h5>
-                            <span>Trainer</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="team-item position-relative">
-                        <div class="position-relative">
-                            <img class="img-fluid" src="img/team-2.jpg" alt="">
-                            <div class="team-social text-center">
-                                <a class="btn btn-square btn-outline-primary border-2 m-1" href=""><i
-                                        class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square btn-outline-primary border-2 m-1" href=""><i
-                                        class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square btn-outline-primary border-2 m-1" href=""><i
-                                        class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="bg-light text-center p-4">
-                            <h5 class="mt-2">Full Name</h5>
-                            <span>Trainer</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="team-item position-relative">
-                        <div class="position-relative">
-                            <img class="img-fluid" src="img/team-3.jpg" alt="">
-                            <div class="team-social text-center">
-                                <a class="btn btn-square btn-outline-primary border-2 m-1" href=""><i
-                                        class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square btn-outline-primary border-2 m-1" href=""><i
-                                        class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square btn-outline-primary border-2 m-1" href=""><i
-                                        class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="bg-light text-center p-4">
-                            <h5 class="mt-2">Full Name</h5>
-                            <span>Trainer</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="team-item position-relative">
-                        <div class="position-relative">
-                            <img class="img-fluid" src="img/team-4.jpg" alt="">
-                            <div class="team-social text-center">
-                                <a class="btn btn-square btn-outline-primary border-2 m-1" href=""><i
-                                        class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square btn-outline-primary border-2 m-1" href=""><i
-                                        class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square btn-outline-primary border-2 m-1" href=""><i
-                                        class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="bg-light text-center p-4">
-                            <h5 class="mt-2">Full Name</h5>
-                            <span>Trainer</span>
-                        </div>
-                    </div>
-                </div>
+            <!-- Picture 2 -->
+            <div class="col-md-3 col-sm-6 mb-4">
+                <img src="img/iaf.jpg" alt="Picture 2" class="img-fluid rounded shadow">
+            </div>
+            <!-- Picture 3 -->
+            <div class="col-md-3 col-sm-6 mb-4">
+                <img src="img/qro.jpg" alt="Picture 3" class="img-fluid rounded shadow">
+            </div>
+            <!-- Picture 4 -->
+            <div class="col-md-3 col-sm-6 mb-4">
+                <img src="img/egac.jpg" alt="Picture 4" class="img-fluid rounded shadow">
             </div>
         </div>
     </div>
@@ -266,6 +219,7 @@
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-light footer my-6 mb-0 py-6 wow fadeIn" data-wow-delay="0.1s">
         <div class="container">
+            <hr>
             <div class="row g-5">
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-white mb-4">Get In Touch</h4>
