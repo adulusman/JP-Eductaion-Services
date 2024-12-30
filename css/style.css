@@ -24,7 +24,25 @@ body{}
 
     
 }
-
+.whatsapp-icon{
+    position: fixed;
+    right: 33px;
+    bottom: 90px;
+    display: flex;
+    width: 45px;
+    height: 45px;
+    align-items: center;
+    justify-content: center;
+    transition: 5s;
+    z-index: 99;
+    background: var(--bs-primary) !important;
+    border-radius: 0px;
+    font-size: 30px;
+    color: white;
+}
+a:hover i.fab.fa-whatsapp {
+    color: white;
+}
 
 .py-6 {
     padding-top: 6rem;
@@ -66,7 +84,7 @@ body{}
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #07010e;
+    background-color: #09243f;
     /* Background color while loading */
     display: flex;
     justify-content: center;

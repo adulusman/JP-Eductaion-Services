@@ -29,6 +29,19 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        /* Hide the second slide on mobile screens */
+        @media (max-width: 768px) {
+            .carousel-item:nth-child(2) {
+                display: none !important;
+            }
+            .carousel-control-prev,
+            .carousel-control-next {
+                display: none !important;
+            }
+        }
+    </style>
 </head>
 
 <body class="bg-dark">
@@ -122,29 +135,25 @@
                                 <div class="courses-item d-flex flex-column bg-white overflow-hidden h-100">
                                     <div class="text-center p-4 pt-0">
                                         <div class="d-inline-block bg-primary text-white fs-5 py-1 px-4 mb-4">The Uttar Pradesh State Open School Board (UPSOSB)</div>
-                                        <div class="position-relative mt-auto" >
+                                        <div class="position-relative mt-auto">
                                             <img class="imges" src="img/swu.png" alt="">
-                                            
                                         </div>
                                         <br>
-                                        <!-- <p>Description of course 1.</p> -->
                                         <div>
                                             <a class="btn btn-outline-primary border-2" href="Secondary and Senior Secondary Education.html#swu">Read More</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            
+    
                             <div class="col-lg-4 col-md-6">
                                 <div class="courses-item d-flex flex-column bg-white overflow-hidden h-100">
                                     <div class="text-center p-4 pt-0">
                                         <div class="d-inline-block bg-primary text-white fs-5 py-1 px-4 mb-4">The Board of Open Schooling and Skill Education (BOSSE)</div>
-                                        <div class="position-relative mt-auto" >
+                                        <div class="position-relative mt-auto">
                                             <img class="imges" src="img/bosse.png" alt="">
-                                            
                                         </div>
                                         <br>
-                                        <!-- <p>Description of course 1.</p> -->
                                         <div>
                                             <a class="btn btn-outline-primary border-2" href="Secondary and Senior Secondary Education.html#bosse">Read More</a>
                                         </div>
@@ -154,14 +163,11 @@
                             <div class="col-lg-4 col-md-6">
                                 <div class="courses-item d-flex flex-column bg-white overflow-hidden h-100">
                                     <div class="text-center p-4 pt-0">
-                                        <div class="d-inline-block bg-primary text-white fs-5 py-1 px-4 mb-4"><br> Jamia Urdu Aligarh <br>
-                                        <br></div>
-                                        <div class="position-relative mt-auto" >
+                                        <div class="d-inline-block bg-primary text-white fs-5 py-1 px-4 mb-4"><br> Jamia Urdu Aligarh <br><br></div>
+                                        <div class="position-relative mt-auto">
                                             <img class="imges" src="img/aligath.jpg" alt="">
-                                            
                                         </div>
                                         <br>
-                                        <!-- <p>Description of course 1.</p> -->
                                         <div>
                                             <a class="btn btn-outline-primary border-2" href="Secondary and Senior Secondary Education.html#aligath">Read More</a>
                                         </div>
@@ -171,18 +177,16 @@
                         </div>
                     </div>
                     <!-- Slide 2 -->
-                    <div class="carousel-item ">
+                    <div class="carousel-item">
                         <div class="row g-4">
                             <div class="col-lg-4 col-md-6">
                                 <div class="courses-item d-flex flex-column bg-white overflow-hidden h-100">
                                     <div class="text-center p-4 pt-0">
                                         <div class="d-inline-block bg-primary text-white fs-5 py-1 px-4 mb-4">The National Institute of Open Schooling <br> (NIOS)</div>
-                                        <div class="position-relative mt-auto" >
+                                        <div class="position-relative mt-auto">
                                             <img class="imges" src="img/nios.png" alt="">
-                                            
                                         </div>
                                         <br>
-                                        <!-- <p>Description of course 1.</p> -->
                                         <div>
                                             <a class="btn btn-outline-primary border-2" href="Secondary and Senior Secondary Education.html#nios">Read More</a>
                                         </div>
@@ -193,12 +197,10 @@
                                 <div class="courses-item d-flex flex-column bg-white overflow-hidden h-100">
                                     <div class="text-center p-4 pt-0">
                                         <div class="d-inline-block bg-primary text-white fs-5 py-1 px-4 mb-4">The Board of Secondary and Higher Education (BSHE)</div>
-                                        <div class="position-relative mt-auto" >
+                                        <div class="position-relative mt-auto">
                                             <img class="imges" src="img/bseh.png" alt="">
-                                            
                                         </div>
                                         <br>
-                                        <!-- <p>Description of course 1.</p> -->
                                         <div>
                                             <a class="btn btn-outline-primary border-2" href="Secondary and Senior Secondary Education.html#bshe">Read More</a>
                                         </div>
@@ -207,6 +209,7 @@
                             </div>
                         </div>
                     </div>
+                </div>
                 <!-- Carousel Controls -->
                 <a class="carousel-control-prev" href="#coursesCarousel" role="button" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -218,13 +221,12 @@
                 </a>
             </div>
         </div>
-    </div>
     <div class="text-center " style="position: relative ;top: 50px;">
         <a class="btn btn-outline-dark border-2 text-white"  href="Secondary and Senior Secondary Education.html" style="font-size: 30px;">Explore</a>
     </div>
     <!-- Courses End -->
      <!-- regular -->
-    <div class="container-xxl courses my-6 py-6 pb-0">
+    <div class=" courses my-6 py-6 pb-0">
         <div class="container">
             <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
                 <h1 class="display-6 mb-4 text-white">Regular Education</h1>
@@ -736,14 +738,15 @@
 
 
     <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-light footer my-6 mb-0 py-6 wow fadeIn" data-wow-delay="0.1s">
+   <div class="container-fluid bg-dark text-light footer my-6 mb-0 py-6 wow fadeIn" data-wow-delay="0.1s">
         <div class="container">
+            <hr>
             <div class="row g-5">
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-white mb-4">Get In Touch</h4>
                     <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>ADAMSTAR, THODUPUZHA, KERALA,685584</p>
                     <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 90611 81195</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>Jpeducationservicesthodupuzha@gmail.com</p>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-light mb-4">Quick Links</h4>
@@ -765,7 +768,7 @@
 
                     <h6 class="text-white mt-4 mb-3">Follow Us</h6>
                     <div class="d-flex pt-2">
-                        <a class="btn btn-square btn-outline-light me-1" href="feature.html"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-outline-light me-1" href=""><i class="fab fa-twitter"></i></a>
                         <a class="btn btn-square btn-outline-light me-1" href=""><i class="fab fa-facebook-f"></i></a>
                         <a class="btn btn-square btn-outline-light me-1" href=""><i class="fab fa-youtube"></i></a>
                         <a class="btn btn-square btn-outline-light me-0" href=""><i class="fab fa-linkedin-in"></i></a>
@@ -775,7 +778,6 @@
         </div>
     </div>
     <!-- Footer End -->
-
 
     <!-- Copyright Start -->
     <div class="container-fluid copyright text-light py-4 wow fadeIn" data-wow-delay="0.1s">
