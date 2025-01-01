@@ -106,8 +106,8 @@
     </div>
     <!-- Page Header End -->
 
-    <div class="container-xxl courses my-6 py-6 pb-0">
-        <div >
+    <div class="container-xxl courses  my-6 py-6 pb-0">
+        <div class="container">
             <!-- Trending Courses Section -->
             <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
                 <h6 class="text-primary text-uppercase mb-2">Trending Courses</h6>
@@ -116,7 +116,7 @@
             
             <!-- Make Appointment Form -->
             <div class="col-lg-8 mx-auto mb-0 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="bg-primary text-center ">
+                <div class="bg-primary text-center p-5">
                     <h1 class="mb-4">JOIN NOW</h1>
                     <form>
                         <div class="row g-3">
@@ -141,26 +141,34 @@
                                     <label for="number">Your Phone number</label>
                                 </div>
                             </div>
-                            <!-- Select University -->
+                            <!-- select catagaries -->
+                            <div class="col-sm-6">
+                                <div class="form-floating">
+                                    <select class="form-select border-0" id="Category" onchange="updateUniversities()" required>
+                                        <option value="" disabled selected>Select a category</option>
+                                        <option value="secondary">Secondary And Senior Secondary Education</option>
+                                        <option value="regular">Regular Education</option>
+                                        <option value="online">Online Education</option>
+                                        <option value="distance">Distance Education</option>
+                                        <option value="autonomous">Autonomous</option>
+                                    </select>
+                                    <!-- <label for="catagaries">Select a Category</label> -->
+                                </div>
+                            </div>
+                            
                             <div class="col-sm-6">
                                 <div class="form-floating">
                                     <select class="form-select border-0" id="university" required>
                                         <option value="" disabled selected>Select a University</option>
-                                        <option value="University 1">University 1</option>
-                                        <option value="University 2">University 2</option>
-                                        <option value="University 3">University 3</option>
                                     </select>
+                                    <!-- <label for="university">Select a University</label> -->
                                 </div>
                             </div>
                             <!-- Select Course -->
                             <div class="col-sm-6">
                                 <div class="form-floating">
-                                    <select class="form-select border-0" id="course" required>
-                                        <option value="" disabled selected>Select a Course</option>
-                                        <option value="Course 1">Course 1</option>
-                                        <option value="Course 2">Course 2</option>
-                                        <option value="Course 3">Course 3</option>
-                                    </select>
+                                    <input type="text" class="form-control border-0" id="course" placeholder="Type your course" required>
+                                    <label for="course">Type your course</label>
                                 </div>
                             </div>
                             <!-- Select Year -->
@@ -168,9 +176,10 @@
                                 <div class="form-floating">
                                     <select class="form-select border-0" id="year" required>
                                         <option value="" disabled selected>Select a Year</option>
-                                        <option value="2023">2023</option>
-                                        <option value="2024">2024</option>
-                                        <option value="2025">2025</option>
+                                        <option value="01">01</option>
+                                        <option value="02">02</option>
+                                        <option value="03">03</option>
+                                        <option value="04">04</option>
                                     </select>
                                 </div>
                             </div>
@@ -191,6 +200,7 @@
             </div>
         </div>
     </div>
+    
     
     
     
@@ -259,11 +269,77 @@
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
 
     <script>
+        // Universities mapped to categories
+        const universitiesByCategory = {
+            secondary: [
+                "The Uttar Pradesh State Open School Board (UPSOSB)",
+                "The Board of Open Schooling and Skill Education (BOSSE)",
+                "Jamia Urdu Aligarh",
+                "The National Institute of Open Schooling (NIOS)",
+                "The Board of Secondary and Higher Education (BSHE)"
+            ],
+            regular: [
+                "NIILM University",
+                "Calorx Teachers'University ,Abarmati University",
+                "Sarvepalli Radhakrishnan University",
+                "Asian International University",
+                "Arunodaya University",
+                "Arunachal University",
+                "Monad University",
+                "William Carey University",
+                "Sikkim International University",
+                "Pragyan International University",
+                "Himalayan Garhwal University",
+                "Glocal University"
+            ],
+            online: [
+                "Jain University",
+                "Vignan University",
+                "Yenepoya University",
+                "Subharti University",
+                "The National Institute of Open Schooling (NIOS)",
+                "Suresh Gyan Vihar (SGVU)",
+                "Karnataka State Open University",
+                "Vels Institute of Science, Technology & Advanced Studies (VISTAS)"
+
+            ],
+            distance: [
+                "MATS University",
+                "Himalayan University",
+                "Vinayaka Mission Sikkim University"
+            ],
+            autonomous: [
+                "Bharat Sevak Samaj (BSS)",
+                "South Indian University"
+            ]
+        };
+    
+        function updateUniversities() {
+            // Get the selected category
+            const category = document.getElementById("Category").value;
+            const universitySelect = document.getElementById("university");
+    
+            // Clear existing options
+            universitySelect.innerHTML = '<option value="" disabled selected>Select a University</option>';
+    
+            // Populate universities based on selected category
+            if (universitiesByCategory[category]) {
+                universitiesByCategory[category].forEach((university) => {
+                    const option = document.createElement("option");
+                    option.value = university;
+                    option.textContent = university;
+                    universitySelect.appendChild(option);
+                });
+            }
+        }
+    </script>
+    <script>
         function sendToWhatsApp() {
     // Collect form data
     const name = document.getElementById("name").value;
     const email = document.getElementById("email").value;
     const number = document.getElementById("number").value; // Fixed here
+    const Category = document.getElementById("Category").value;
     const university = document.getElementById("university").value;
     const course = document.getElementById("course").value;
     const year = document.getElementById("year").value;
@@ -271,8 +347,8 @@
 
     // Construct the WhatsApp message
     const whatsappMessage = `Hello, I would like to join now:\n\n` +
-        `Name: ${name}\nEmail: ${email}\nPhone Number: ${number}\nUniversity: ${university}\n` +
-        `Course: ${course}\nYear: ${year}\nMessage: ${message}`;
+        `Name: ${name}\nEmail: ${email}\nPhone Number: ${number}\n\nCategory: ${Category}\nUniversity: ${university}\n` +
+        `Course: ${course}\nYear: ${year}\n\nMessage: ${message}`;
 
     // WhatsApp API link (replace YOUR_PHONE_NUMBER with the actual number)
     const whatsappURL = `https://wa.me/+919037420487?text=${encodeURIComponent(whatsappMessage)}`;
