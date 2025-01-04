@@ -52,3 +52,26 @@
     
 })(jQuery);
 
+// ads pop
+
+// Run this code when the window loads
+window.onload = function () {
+    const imagePopup = document.getElementById("imagePopup");
+    const closeImagePopup = document.getElementById("closeImagePopup");
+
+    // Show the modal on page load
+    imagePopup.style.display = "flex";
+
+    // Close the modal when the "X" button is clicked
+    closeImagePopup.onclick = function () {
+        imagePopup.style.display = "none";
+    };
+
+    // Close the modal when clicking outside the content area
+    window.onclick = function (event) {
+        if (event.target === imagePopup) {
+            imagePopup.style.display = "none";
+        }
+    };
+};
+

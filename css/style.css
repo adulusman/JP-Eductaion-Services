@@ -522,3 +522,57 @@ a:hover i.fab.fa-whatsapp {
       font-weight: bold;
       color: #333;
   }
+ /* Modal Container */
+      /* Modal Background */
+      .image-modal {
+        display: none;
+        position: fixed;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8); /* Dark overlay */
+        z-index: 1000;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Modal Content */
+    .image-modal-content {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        max-width: 500px;
+        width: 90%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        position: relative; /* For positioning the close button */
+    }
+
+    /* Image Styling */
+    .popup-image {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    /* Close Button */
+    .close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 24px;
+        font-weight: bold;
+        color: #333;
+        cursor: pointer;
+        background-color: #f0f0f0;
+        padding: 5px 10px;
+        border-radius: 100%;
+        transition: 0.3s;
+    }
+
+    .close:hover {
+        color: #fff;
+        background-color: red;
+    }
