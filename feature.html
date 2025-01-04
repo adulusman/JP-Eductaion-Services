@@ -31,98 +31,100 @@
     <link href="css/style.css" rel="stylesheet">
     <!-- Styles for the Carousel -->
     <style>
-        .carousel {
-            width: 100%;
-            overflow: hidden;
-            position: relative;
-            margin: 20px 0;
-        }
+      
+/* gallary */
 
-        .carousel-track {
-            display: flex;
-            transition: transform 0.5s ease-in-out;
-        }
-
-        .carousel-item {
-            min-width: 100%;
-            flex-shrink: 0;
-            position: relative;
-        }
-
-        .carousel-item video {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-
-        .carousel-button {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background: rgba(0, 0, 0, 0.5);
-            color: #fff;
-            border: none;
-            padding: 10px;
-            cursor: pointer;
-            z-index: 1000;
-        }
-
-        .carousel-button.prev {
-            left: 10px;
-        }
-
-        .carousel-button.next {
-            right: 10px;
-        }
-        *{
-	box-sizing: border-box;
-	padding: 0;
-	margin: 0;
-	font-family: 'poppins', sans-serif;
-	font-size: 18px;
+.product-section {
+  padding: 7rem 0;
+ }
+  .product-section .product-item {
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    position: relative;
+    padding-bottom: 50px;
+    cursor: pointer; }
+    .product-section .product-item .product-thumbnail {
+      margin-bottom: 30px;
+      position: relative;
+      top: 0;
+      -webkit-transition: .3s all ease;
+      -o-transition: .3s all ease;
+      transition: .3s all ease; }
+    .product-section .product-item h3 {
+      font-weight: 600;
+      font-size: 16px; }
+    .product-section .product-item strong {
+      font-weight: 800 !important;
+      font-size: 18px !important; }
+    .product-section .product-item h3, .product-section .product-item strong {
+      color: #ceb69d;
+      text-decoration: none; }
+    .product-section .product-item .icon-cross {
+      position: absolute;
+      width: 35px;
+      height: 35px;
+      display: inline-block;
+      background: #ceb69d;
+      bottom: 15px;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+      margin-bottom: -17.5px;
+      border-radius: 50%;
+      opacity: 0;
+      visibility: hidden;
+      -webkit-transition: .3s all ease;
+      -o-transition: .3s all ease;
+      transition: .3s all ease; }
+      .product-section .product-item .icon-cross img {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%); }
+    .product-section .product-item:before {
+      bottom: 0;
+      left: 0;
+      right: 0;
+      position: absolute;
+      content: "";
+      background: #dce5e4;
+      height: 0%;
+      z-index: -1;
+      border-radius: 10px;
+      -webkit-transition: .3s all ease;
+      -o-transition: .3s all ease;
+      transition: .3s all ease; }
+    .product-section .product-item:hover .product-thumbnail {
+      top: -25px; }
+    .product-section .product-item:hover .icon-cross {
+      bottom: 0;
+      opacity: 1;
+      visibility: visible; }
+    .product-section .product-item:hover:before {
+      height: 70%; }
+      .video-gallery-section {
+    padding: 50px 0;
 }
 
-.container{
-	width: 500px;
-	padding: 30px;
-	border: 1px solid #eeeeee;
-	border-radius: 10px;
-	background-color: #003b5b;
+.video-gallery-section .section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
 }
-h4{
-	margin-bottom: 10px;
-	font-size: 24px;
-	color: white;
-}
-input{
-	width: 100%;
-	padding: 10px;
-	margin-bottom: 10px;
-}
-textarea{
-	width: 100%;
-	padding: 10px;
-}
-#submit{
-	border: none;
-	background-color: orangered;
-	color: white;
-	width: 200px;
-	margin-top: 10px;
-	border-radius: 5px;
-}
-#submit:hover{
-	background-color: #333333;
-}
+
     </style>
 </head>
 
 <body class="bg-dark">
     <!-- Spinner Start -->
-    <div id="spinner"
+    <!-- <div id="spinner"
         class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-grow text-primary" role="status"></div>
-    </div>
+    </div> -->
     <!-- Spinner End -->
 
 
@@ -172,7 +174,7 @@ textarea{
             <div class="navbar-nav ms-auto p-4 p-lg-0">
                 <a href="index.html" class="nav-item nav-link">Home</a>
                 <a href="about.html" class="nav-item nav-link">About</a>
-                <a href="courses.html" class="nav-item nav-link">Courses</a>
+                <a href="Gallery.html" class="nav-item nav-link">Gallery</a>
                 <a href="university.html" class="nav-item nav-link active">Universities</a>
                 <a href="contact.html" class="nav-item nav-link">Contact</a>
             </div>
@@ -197,17 +199,107 @@ textarea{
     </div>
     <!-- Page Header End -->
 
-    <div class="container">
-      <form method="post" name="contact-form">
-        <h4>Contact Us</h4>
-        <input type="text" name="your-name" placeholder="Name">
-        <input type="text" name="your-number" placeholder="Number">
-        <input type="email" name="your-email" placeholder="Email">
-        <textarea name="message" rows="7" placeholder="Your Message">
-        </textarea>
-        <input type="submit" value="Submit" id="submit">
-          </form>
-      </div>
+    <div class="video-gallery-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center ">
+                    <h2 class="section-title mb-5 text-light">	Our Product</h2>
+                </div>
+            </div>
+            <div class="row">
+                  <!-- Start Column 1 -->
+                <div class="col-12 col-md-4 col-lg-3 mb-5">
+                    <a class="product-item" href="#">
+                        <img src="img/aligath.jpg" class="img-fluid product-thumbnail">
+                        <!-- <h3 class="product-title">Black Suit</h3>
+                        <strong class="product-price">₹1500.00</strong> -->
+
+                    </a>
+                </div> 
+                <!-- End Column 1 -->
+                    
+                <!-- Start Column 2 -->
+                <div class="col-12 col-md-4 col-lg-3 mb-5">
+                    <a class="product-item" href="#">
+                        <img src="img/aligath.jpg" class="img-fluid product-thumbnail">
+                        <!-- <h3 class="product-title">Black Suit</h3>
+                        <strong class="product-price">₹1500.00</strong> -->
+
+                    </a>
+                </div> 
+                <!-- End Column 2 -->
+
+                <!-- Start Column 3 -->
+                <div class="col-12 col-md-4 col-lg-3 mb-5">
+                    <a class="product-item" href="#">
+                        <img src="img/aligath.jpg" class="img-fluid product-thumbnail">
+                        <!-- <h3 class="product-title">Kruzo Aero Chair</h3>
+                        <strong class="product-price">₹1178.00</strong> -->
+
+                    </a>
+                </div>
+                <!-- End Column 3 -->
+
+                <!-- Start Column 4 -->
+                <div class="col-12 col-md-4 col-lg-3 mb-5">
+                    <a class="product-item" href="#">
+                        <img src="img/aligath.jpg" class="img-fluid product-thumbnail">
+                        <!-- <h3 class="product-title">Kurta</h3>
+                        <strong class="product-price">₹2043.00</strong> -->
+
+                    </a>
+                </div>
+                <!-- End Column 4 -->
+
+
+                <!-- Start Column 1 -->
+                <div class="col-12 col-md-4 col-lg-3 mb-5">
+                    <a class="product-item" href="#">
+                        <img src="img/aligath.jpg" class="img-fluid product-thumbnail">
+                        <!-- <h3 class="product-title">Black Suit</h3> -->
+                        <!-- <strong class="product-price">₹1500.00</strong> -->
+
+                    </a>
+                </div> 
+                <!-- End Column 1 -->
+                    
+                <!-- Start Column 2 -->
+                <div class="col-12 col-md-4 col-lg-3 mb-5">
+                    <a class="product-item" href="#">
+                        <img src="img/aligath.jpg" class="img-fluid product-thumbnail">
+                        <!-- <h3 class="product-title"></h3> -->
+                        <!-- <strong class="product-price">Sherwani</strong> -->
+
+                    </a>
+                </div> 
+                <!-- End Column 2 -->
+
+                <!-- Start Column 3 -->
+                <div class="col-12 col-md-4 col-lg-3 mb-5">
+                    <a class="product-item" href="#">
+                        <img src="img/aligath.jpg" class="img-fluid product-thumbnail">
+                        <!-- <h3 class="product-title">Black Suit</h3> -->
+                        <!-- <strong class="product-price">Black Suit</strong> -->
+
+                    </a>
+                </div>
+                <!-- End Column 3 -->
+
+                <!-- Start Column 4 -->
+                <div class="col-12 col-md-4 col-lg-3 mb-5">
+                    <a class="product-item" href="#">
+                        <img src="img/aligath.jpg" class="img-fluid product-thumbnail">
+                        <!-- <h3 class="product-title">Kurta</h3>
+                        <strong class="product-price">₹1043.00</strong> -->
+
+                    </a>
+                </div>
+                <!-- End Column 4 -->
+
+            </div>
+        </div>
+    </div>
+
 
   
     
