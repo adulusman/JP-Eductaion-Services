@@ -681,6 +681,19 @@
         });
 
     </script>
+     <script>
+        function sendToWhatsApp() {
+    // Construct the WhatsApp message
+    const whatsappMessage = `Hello,  I need a help:\n\n`;
+
+    // WhatsApp API link (replace YOUR_PHONE_NUMBER with the actual number)
+    const whatsappURL = `https://wa.me/+916238713434?text=${encodeURIComponent(whatsappMessage)}`;
+
+    // Redirect to WhatsApp
+    window.open(whatsappURL, "_blank");
+}
+
+    </script>
 
 
     <!-- JavaScript Libraries -->
