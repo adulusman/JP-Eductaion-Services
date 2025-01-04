@@ -74,6 +74,46 @@
         .carousel-button.next {
             right: 10px;
         }
+        *{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: 'poppins', sans-serif;
+	font-size: 18px;
+}
+
+.container{
+	width: 500px;
+	padding: 30px;
+	border: 1px solid #eeeeee;
+	border-radius: 10px;
+	background-color: #003b5b;
+}
+h4{
+	margin-bottom: 10px;
+	font-size: 24px;
+	color: white;
+}
+input{
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+textarea{
+	width: 100%;
+	padding: 10px;
+}
+#submit{
+	border: none;
+	background-color: orangered;
+	color: white;
+	width: 200px;
+	margin-top: 10px;
+	border-radius: 5px;
+}
+#submit:hover{
+	background-color: #333333;
+}
     </style>
 </head>
 
@@ -157,304 +197,20 @@
     </div>
     <!-- Page Header End -->
 
+    <div class="container">
+      <form method="post" name="contact-form">
+        <h4>Contact Us</h4>
+        <input type="text" name="your-name" placeholder="Name">
+        <input type="text" name="your-number" placeholder="Number">
+        <input type="email" name="your-email" placeholder="Email">
+        <textarea name="message" rows="7" placeholder="Your Message">
+        </textarea>
+        <input type="submit" value="Submit" id="submit">
+          </form>
+      </div>
 
-
-    <div id="coursesCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <!-- First Carousel Item -->
-            <div class="carousel-item active">
-                <div class="row">
-                    <div class="col-lg-4 col-md-12">
-                        <div class="courses-item d-flex flex-column bg-white overflow-hidden h-100">
-                            <div class="text-center p-4 pt-0">
-                                <div class="d-inline-block bg-primary text-white fs-5 py-1 px-4 mb-4">
-                                    The National Institute of Open Schooling (NIOS)
-                                </div>
-                                <div class="position-relative mt-auto">
-                                    <img class="img-fluid" src="img/nios.png" alt="NIOS logo">
-                                </div>
-                                <br>
-                                <div>
-                                    <a class="btn btn-outline-primary border-2"
-                                        href="Secondary and Senior Secondary Education.html#nios">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 d-none d-lg-block">
-                        <div class="courses-item d-flex flex-column bg-white overflow-hidden h-100">
-                            <div class="text-center p-4 pt-0">
-                                <div class="d-inline-block bg-primary text-white fs-5 py-1 px-4 mb-4">
-                                    The Board of Secondary and Higher Education (BSHE)
-                                </div>
-                                <div class="position-relative mt-auto">
-                                    <img class="img-fluid" src="img/bseh.png" alt="BSHE logo">
-                                </div>
-                                <br>
-                                <div>
-                                    <a class="btn btn-outline-primary border-2"
-                                        href="Secondary and Senior Secondary Education.html#bshe">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 d-none d-lg-block">
-                        <div class="courses-item d-flex flex-column bg-white overflow-hidden h-100">
-                            <div class="text-center p-4 pt-0">
-                                <div class="d-inline-block bg-primary text-white fs-5 py-1 px-4 mb-4">
-                                    Another Course Title
-                                </div>
-                                <div class="position-relative mt-auto">
-                                    <img class="img-fluid" src="img/another.png" alt="Another Course">
-                                </div>
-                                <br>
-                                <div>
-                                    <a class="btn btn-outline-primary border-2" href="#">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Second Carousel Item -->
-            <div class="carousel-item">
-                <div class="row">
-                    <div class="col-lg-4 col-md-12">
-                        <div class="courses-item d-flex flex-column bg-white overflow-hidden h-100">
-                            <div class="text-center p-4 pt-0">
-                                <div class="d-inline-block bg-primary text-white fs-5 py-1 px-4 mb-4">
-                                    New Course 1
-                                </div>
-                                <div class="position-relative mt-auto">
-                                    <img class="img-fluid" src="img/course1.png" alt="New Course 1">
-                                </div>
-                                <br>
-                                <div>
-                                    <a class="btn btn-outline-primary border-2" href="#">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 d-none d-lg-block">
-                        <div class="courses-item d-flex flex-column bg-white overflow-hidden h-100">
-                            <div class="text-center p-4 pt-0">
-                                <div class="d-inline-block bg-primary text-white fs-5 py-1 px-4 mb-4">
-                                    New Course 2
-                                </div>
-                                <div class="position-relative mt-auto">
-                                    <img class="img-fluid" src="img/course2.png" alt="New Course 2">
-                                </div>
-                                <br>
-                                <div>
-                                    <a class="btn btn-outline-primary border-2" href="#">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 d-none d-lg-block">
-                        <div class="courses-item d-flex flex-column bg-white overflow-hidden h-100">
-                            <div class="text-center p-4 pt-0">
-                                <div class="d-inline-block bg-primary text-white fs-5 py-1 px-4 mb-4">
-                                    New Course 3
-                                </div>
-                                <div class="position-relative mt-auto">
-                                    <img class="img-fluid" src="img/course3.png" alt="New Course 3">
-                                </div>
-                                <br>
-                                <div>
-                                    <a class="btn btn-outline-primary border-2" href="#">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Carousel Controls -->
-        <a class="carousel-control-prev" href="#coursesCarousel" role="button" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#coursesCarousel" role="button" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </a>
-    </div>
-
-    <div class="text-center " style="position: relative ;top: 50px;">
-        <a class="btn btn-outline-dark border-2 text-white" href="Secondary and Senior Secondary Education.html"
-            style="font-size: 30px;">Explore</a>
-    </div>
-    <div class="container-xxl my-6 pb-0">
-        <div class="container">
-            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                <h1 class="display-6 mb-4 text-white">Secondary & <br> Senior Secondary Education</h1>
-            </div>
-            <div id="coursesCarousel" class="carousel slide" data-bs-interval="false">
-                <div class="carousel-inner">
-                    <!-- Slide 1 -->
-                    <div class="carousel-item active">
-                        <div class="row g-4">
-                            <div class="col-lg-4 col-md-6">
-                                <div class="courses-item d-flex flex-column bg-white overflow-hidden h-100">
-                                    <div class="text-center p-4 pt-0">
-                                        <div class="d-inline-block bg-primary text-white fs-5 py-1 px-4 mb-4">The Uttar
-                                            Pradesh State Open School Board (UPSOSB)</div>
-                                        <div class="position-relative mt-auto">
-                                            <img class="imges" src="img/swu.png" alt="">
-
-                                        </div>
-                                        <br>
-                                        <!-- <p>Description of course 1.</p> -->
-                                        <div>
-                                            <a class="btn btn-outline-primary border-2"
-                                                href="Secondary and Senior Secondary Education.html#swu">Read More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-4 col-md-6">
-                                <div class="courses-item d-flex flex-column bg-white overflow-hidden h-100">
-                                    <div class="text-center p-4 pt-0">
-                                        <div class="d-inline-block bg-primary text-white fs-5 py-1 px-4 mb-4">The Board
-                                            of Open Schooling and Skill Education (BOSSE)</div>
-                                        <div class="position-relative mt-auto">
-                                            <img class="imges" src="img/bosse.png" alt="">
-
-                                        </div>
-                                        <br>
-                                        <!-- <p>Description of course 1.</p> -->
-                                        <div>
-                                            <a class="btn btn-outline-primary border-2"
-                                                href="Secondary and Senior Secondary Education.html#bosse">Read More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6">
-                                <div class="courses-item d-flex flex-column bg-white overflow-hidden h-100">
-                                    <div class="text-center p-4 pt-0">
-                                        <div class="d-inline-block bg-primary text-white fs-5 py-1 px-4 mb-4"><br> Jamia
-                                            Urdu Aligarh <br>
-                                            <br>
-                                        </div>
-                                        <div class="position-relative mt-auto">
-                                            <img class="imges" src="img/aligath.jpg" alt="">
-
-                                        </div>
-                                        <br>
-                                        <!-- <p>Description of course 1.</p> -->
-                                        <div>
-                                            <a class="btn btn-outline-primary border-2"
-                                                href="Secondary and Senior Secondary Education.html#aligath">Read
-                                                More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Slide 2 -->
-                    <div class="carousel-item ">
-                        <div class="row g-4">
-                            <div class="col-lg-4 col-md-6">
-                                <div class="courses-item d-flex flex-column bg-white overflow-hidden h-100">
-                                    <div class="text-center p-4 pt-0">
-                                        <div class="d-inline-block bg-primary text-white fs-5 py-1 px-4 mb-4">The
-                                            National Institute of Open Schooling <br> (NIOS)</div>
-                                        <div class="position-relative mt-auto">
-                                            <img class="imges" src="img/nios.png" alt="">
-
-                                        </div>
-                                        <br>
-                                        <!-- <p>Description of course 1.</p> -->
-                                        <div>
-                                            <a class="btn btn-outline-primary border-2"
-                                                href="Secondary and Senior Secondary Education.html#nios">Read More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6">
-                                <div class="courses-item d-flex flex-column bg-white overflow-hidden h-100">
-                                    <div class="text-center p-4 pt-0">
-                                        <div class="d-inline-block bg-primary text-white fs-5 py-1 px-4 mb-4">The Board
-                                            of Secondary and Higher Education (BSHE)</div>
-                                        <div class="position-relative mt-auto">
-                                            <img class="imges" src="img/bseh.png" alt="">
-
-                                        </div>
-                                        <br>
-                                        <!-- <p>Description of course 1.</p> -->
-                                        <div>
-                                            <a class="btn btn-outline-primary border-2"
-                                                href="Secondary and Senior Secondary Education.html#bshe">Read More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Carousel Controls -->
-                    <a class="carousel-control-prev" href="#coursesCarousel" role="button" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#coursesCarousel" role="button" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="text-center " style="position: relative ;top: 50px;">
-            <a class="btn btn-outline-dark border-2 text-white" href="Secondary and Senior Secondary Education.html"
-                style="font-size: 30px;">Explore</a>
-        </div>
-        <!-- Courses End -->
-
-        <div class="container-xxl py-6">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="owl-carousel testimonial-carousel">
-                            <div class="testimonial-item text-center">
-                                <div class="position-relative mb-5">
-                                    <img class="img-fluid rounded-circle mx-auto" src="img/22yr.svg" alt=""
-                                        style="width: 300px; height: 300px;">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Video Carousel Section -->
-        <section class="carousel-section">
-            <div class="carousel">
-                <button class="carousel-button prev" onclick="prevSlide()">&#8249;</button>
-                <div class="carousel-track">
-                    <div class="carousel-item">
-                        <video src="vedio/WhatsApp Video 2024-12-12 at 5.20.03 PM.mp4" controls></video>
-                    </div>
-                    <div class="carousel-item">
-                        <video src="vedio/WhatsApp Video 2024-12-12 at 5.20.03 PM.mp4" controls></video>
-                    </div>
-                    <div class="carousel-item">
-                        <video src="vedio/WhatsApp Video 2024-12-12 at 5.20.03 PM.mp4" controls></video>
-                    </div>
-                </div>
-                <button class="carousel-button next" onclick="nextSlide()">&#8250;</button>
-            </div>
-        </section>
-
-
-
-
+  
+    
         <!-- Footer Start -->
 
         <div class="container-fluid bg-dark text-light footer  mb-0 py-6 wow fadeIn" data-wow-delay="0.1s">
@@ -526,29 +282,58 @@
         <a class="whatsapp-icon" href="https://wa.me/+918111989132" target="_blank" style="text-decoration: none;"><i
                 class="fab fa-whatsapp"></i></a>
 
-        <!-- Script for Carousel Functionality -->
-        <script>
-            const track = document.querySelector('.carousel-track');
-            const items = document.querySelectorAll('.carousel-item');
-            let currentIndex = 0;
+                <!-- <script>
+                    const form = document.getElementById("form");
+form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    console.log("Form submitted"); // Add this for debugging
 
-            function updateCarousel() {
-                const width = items[0].getBoundingClientRect().width;
-                track.style.transform = `translateX(-${currentIndex * width}px)`;
-            }
+    // Collect form data
+    const formData = {
+        name: form.name.value,
+        email: form.email.value,
+        message: form.message.value,
+    };
+    console.log("Form Data: ", formData); // Log the data for debugging
 
-            function prevSlide() {
-                currentIndex = (currentIndex > 0) ? currentIndex - 1 : items.length - 1;
-                updateCarousel();
-            }
+    try {
+        const response = await fetch("https://script.google.com/macros/library/d/1r1clw3FM2KoyzbMh9i3lF71mK_OF6sRPpvBpdAXF0ZHrSqJyQfp5HrG9/4", {
+            method: "POST",
+            body: JSON.stringify(formData),
+            headers: {
+                "Content-Type": "application/json",
+            },
+        });
+        const result = await response.json();
+        console.log("Response: ", result); // Log the response for debugging
+        if (result.status === "success") {
+            alert("Form submitted successfully!");
+            form.reset();
+        } else {
+            alert("Error: " + result.message);
+        }
+    } catch (error) {
+        console.error("Error submitting form: ", error);
+        alert("An error occurred while submitting the form.");
+    }
+});
 
-            function nextSlide() {
-                currentIndex = (currentIndex < items.length - 1) ? currentIndex + 1 : 0;
-                updateCarousel();
-            }
+                </script> -->
+          <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbyThTpqzXZp0ll5EuBIH5VhrwTQbECf7PkoZKxQINsXq1wgP8t68KSfIE9e5jbv1076BQ/exec'
 
-            window.addEventListener('resize', updateCarousel);
-        </script>
+const form = document.forms['contact-form']
+
+form.addEventListener('submit', e => {
+  
+  e.preventDefault()
+  
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+  .then(response => alert("Thank you! Form is submitted" ))
+  .then(() => { window.location.reload(); })
+  .catch(error => console.error('Error!', error.message))
+})
+          </script>      
         <!-- JavaScript Libraries -->
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>

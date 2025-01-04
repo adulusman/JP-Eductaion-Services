@@ -63,19 +63,6 @@ a:hover i.fab.fa-whatsapp {
 }
 
 
-/*** Spinner ***/
-#spinner {
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity .5s ease-out, visibility 0s linear .5s;
-    z-index: 99999;
-}
-
-#spinner.show {
-    transition: opacity .5s ease-out, visibility 0s linear 0s;
-    visibility: visible;
-    opacity: 1;
-}
 
 /* Fullscreen loader styling */
 #loading {
@@ -118,6 +105,14 @@ a:hover i.fab.fa-whatsapp {
     width: 500px;
     height: 500px;
 }
+@media (max-width: 768px) {
+    .logo {
+        position:absolute;
+        width: 400px;
+        height: 400px;
+    }
+}
+
 
 /* Spinner animation keyframes */
 @keyframes spin {
