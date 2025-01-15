@@ -41,7 +41,7 @@ body{}
     color: white;
 }
 a:hover i.fab.fa-whatsapp {
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .py-6 {
