@@ -48,6 +48,20 @@ h1, h3 {
     transform: scale(1.05); /* Slight zoom on hover */
 }
 
+@media (max-width: 768px) {
+    .position-relative img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+    .position-relative {
+        padding: 0; /* Remove excess padding for smaller screens */
+        min-height: auto; /* Allow flexible height */
+    }
+}
+
+
+
 
     </style>
    
@@ -433,12 +447,24 @@ h1, h3 {
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="position-relative overflow-hidden pe-5 pt-5 h-100" style="min-height: 400px;">
-                        <img class="position-absolute " src="img/why 02.svg" alt=""
-                            style="object-fit: cover;">
-                        <!-- <img  class="position-absolute top-0 end-0  ps-3 pb-3"  src="img/why01.svg" alt=""
-                            style="width: 200px; height: 200px "> -->
+                        <img
+                            class="position-absolute w-100 h-100"
+                            src="img/why 02.svg"
+                            alt=""
+                            style="object-fit: contain;"
+                        >
+                        <!-- Optional second image -->
+                        <!--
+                        <img
+                            class="position-absolute top-0 end-0 ps-3 pb-3"
+                            src="img/why01.svg"
+                            alt=""
+                            style="width: 200px; height: 200px;"
+                        >
+                        -->
                     </div>
                 </div>
+                
             </div>
         </div>
     </div>
