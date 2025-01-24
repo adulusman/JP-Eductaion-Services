@@ -499,18 +499,16 @@
         function showImage(src) {
             document.getElementById('modalImage').src = src;
         }
-    </script>
-    <script>
+  
         document.addEventListener("DOMContentLoaded", () => {
             // Simulate content loading
             setTimeout(() => {
                 document.getElementById("loading").style.display = "none";
-                document.getElementById("content").style.display = "block";
+                document.getElementById("imageModal").style.display = "block";
             }, 3000); // Adjust time as needed
         });
 
-    </script>
-     <script>
+  
         function sendToWhatsApp() {
     // Construct the WhatsApp message
     const whatsappMessage = `Hello,  I need a help:\n\n`;
